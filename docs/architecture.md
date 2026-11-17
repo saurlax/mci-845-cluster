@@ -1,8 +1,8 @@
-# 系统架构
+# System Architecture
 
 六块 MCI 845 核心板安装在同一块集群底板上。Slot 1 运行集群管理软件，Slot 2–6 作为工作节点。原理图、PCB 丝印、装配文档和管理软件统一使用以下槽位编号。
 
-| 槽位 | 角色 | 网络端口 | 复位或电源控制 |
+| Slot | Role | Network Port | Reset or Power Control |
 | --- | --- | --- | --- |
 | Slot 1 | 管理节点 | 待定 | 待定 |
 | Slot 2 | 工作节点 | 待定 | 待定 |

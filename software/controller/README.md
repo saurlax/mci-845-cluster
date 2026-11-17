@@ -1,4 +1,4 @@
-# 集群管理软件
+# Cluster Controller
 
 管理软件计划运行在 Slot 1 的 MCI 845 核心板上。第一版维护六个槽位的节点清单，并按槽位查询在线状态。槽位编号和角色见[系统架构](../../docs/architecture.md)。
 
