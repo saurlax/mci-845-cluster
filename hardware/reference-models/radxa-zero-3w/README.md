@@ -1,14 +1,11 @@
 # Radxa ZERO 3W Mechanical Reference
 
-`radxa-zero-3w-v1.11.step` 是 Radxa 官方 ZERO 3W V1.11 STEP 模型，包含 PCB、接口、元件和朝元件面伸出的 40 pin 排针。模型原始坐标和几何保持原样。
+Radxa 官方 ZERO 3W V1.11 STEP 模型，包含 PCB、接口、元件和朝元件面伸出的 40 pin 排针。
 
 ## Source
 
-下载并解压官方压缩包，将 STEP 保存为本目录的 `radxa-zero-3w-v1.11.step`。
-
 - [Official hardware downloads](https://docs.radxa.com/en/zero/zero3/download)
 - [Original STEP archive](https://dl.radxa.com/zero3/docs/hw/3w/radxa_zero_3w_3d_stp.zip)
-- 获取日期：2026-11-19。
 - STEP SHA-256：`1eac96aa8804f7270e08610ebd99bf0eccfd26d39d859fae76d119406694ded3`。
 
 ## Coordinates

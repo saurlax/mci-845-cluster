@@ -12,7 +12,7 @@
 | MCI 845 Heatsink | 鳍片区中心，Z=0 为散热片底面 |
 | MCI 845 Spring Push Pin | 扣脚轴线，Z=0 为扣脚尖端 |
 
-本机客户端的库和 STEP 已安装到 `Documents/LCEDA-Pro/libraries`。迁移时，把 `.elib` 和 [`eda-models`](eda-models/) 内的三个 STEP 放进目标客户端配置的库目录，刷新器件库，再在封装的 3D 模型管理器中选中对应 STEP，核对放置原点。 [嘉立创 EDA 封装属性](https://prodocs.lceda.cn/cn/footprint/side-panel-left-property/)
+安装器件库时，把 `.elib` 和 [`eda-models`](eda-models/) 内的三个 STEP 放进 EDA 配置的库目录，刷新器件库，再在封装的 3D 模型管理器中选中对应 STEP，核对放置原点。 [嘉立创 EDA 封装属性](https://prodocs.lceda.cn/cn/footprint/side-panel-left-property/)
 
 ## CAD Files
 
