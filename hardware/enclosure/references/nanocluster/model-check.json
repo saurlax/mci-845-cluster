@@ -1,0 +1,51 @@
+{
+  "source": "https://makerworld.com.cn/zh/models/1311487-sipeed-nanocluster-wai-ke",
+  "author": "Sinky",
+  "sha256": "547e0923454a8c04b3d54103659699107932eea989bce8f5ccb687a6771cac18",
+  "parts": [
+    {
+      "id": "1",
+      "bounds_mm": [
+        [
+          -34.5,
+          41.117,
+          -62.667
+        ],
+        [
+          34.5,
+          77.373,
+          62.667
+        ]
+      ],
+      "watertight": true,
+      "volume_mm3": 49877.68449997607,
+      "layout_dimensions_mm": [
+        69.0,
+        36.256,
+        125.335
+      ]
+    },
+    {
+      "id": "2",
+      "bounds_mm": [
+        [
+          -34.5,
+          -77.373,
+          -62.667
+        ],
+        [
+          34.5,
+          39.117,
+          40.634
+        ]
+      ],
+      "watertight": true,
+      "volume_mm3": 65679.49399708965,
+      "layout_dimensions_mm": [
+        69.0,
+        116.49,
+        103.301
+      ]
+    }
+  ]
+}

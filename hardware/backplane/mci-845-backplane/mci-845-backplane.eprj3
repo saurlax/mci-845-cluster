@@ -1,11 +1,11 @@
 {
-  "name": "MCI 845 Backplane",
+  "name": "MCI 845 Cluster",
   "owner_uuid": "5df2ca3593a8410dbd99922c06753c26",
   "creator_uuid": "5df2ca3593a8410dbd99922c06753c26",
   "created_at": "2026-11-17 00:00:00",
-  "updated_at": "2026-11-17 00:00:00",
+  "updated_at": "2026-11-19 16:42:15",
   "modifier_uuid": "5df2ca3593a8410dbd99922c06753c26",
-  "content": "Six-slot backplane planning draft",
+  "content": "140x65 backplane; top-side power stages and bulk capacitors; Delta 7020; optional mounting holes",
   "archive": false,
   "cbb_project": 0,
   "thumb": "",
@@ -31,19 +31,127 @@
         "name": "Backplane",
         "board": "",
         "source": "",
-        "version": "1794902213701",
-        "updateTime": 1794902213701
+        "version": "1795072869730",
+        "updateTime": 1795072869730
       }
     },
     "sheets": {
+      "57296063e95f49dd": {
+        "uuid": "57296063e95f49dd",
+        "title": "Console Slot Links",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 13,
+        "source": "",
+        "version": "1795235815499",
+        "updateTime": 1795235815499
+      },
       "4c84909806754025": {
         "uuid": "4c84909806754025",
         "title": "Core Board Slots",
         "schematic_uuid": "f815217d289f468b",
         "zIndex": 1,
         "source": "",
-        "version": "1794902464712",
-        "updateTime": 1794902464712
+        "version": "1795235815499",
+        "updateTime": 1795235815499
+      },
+      "2fbdf977a60ba763": {
+        "uuid": "2fbdf977a60ba763",
+        "title": "Ethernet Switch",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 5,
+        "source": "",
+        "version": "1794985507560",
+        "updateTime": 1794985507560
+      },
+      "c1d1e4cf1c294f4f": {
+        "uuid": "c1d1e4cf1c294f4f",
+        "title": "Ethernet Uplink",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 8,
+        "source": "",
+        "version": "1794986089880",
+        "updateTime": 1794986089880
+      },
+      "e8ae820ed297c4f8": {
+        "uuid": "e8ae820ed297c4f8",
+        "title": "Input eFuse",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 3,
+        "source": "",
+        "version": "1794985505176",
+        "updateTime": 1794985505176
+      },
+      "c4293bd3c6de59fa": {
+        "uuid": "c4293bd3c6de59fa",
+        "title": "Power Distribution",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 2,
+        "source": "",
+        "version": "1794985504377",
+        "updateTime": 1794985504377
+      },
+      "47417bb684bb9708": {
+        "uuid": "47417bb684bb9708",
+        "title": "Slot Ethernet 0-2",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 9,
+        "source": "",
+        "version": "1794985512418",
+        "updateTime": 1794985512418
+      },
+      "3365f4dd94bee831": {
+        "uuid": "3365f4dd94bee831",
+        "title": "Slot Ethernet 3-5",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 10,
+        "source": "",
+        "version": "1794985511649",
+        "updateTime": 1794985511649
+      },
+      "7e6feb9ce43122e2": {
+        "uuid": "7e6feb9ce43122e2",
+        "title": "Switch Decoupling",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 7,
+        "source": "",
+        "version": "1794985509495",
+        "updateTime": 1794985509495
+      },
+      "c7e1e28eeda1629a": {
+        "uuid": "c7e1e28eeda1629a",
+        "title": "Switch Regulators",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 4,
+        "source": "",
+        "version": "1794985508433",
+        "updateTime": 1794985508433
+      },
+      "d66aab967c516c88": {
+        "uuid": "d66aab967c516c88",
+        "title": "Switch Support",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 6,
+        "source": "",
+        "version": "1795235815499",
+        "updateTime": 1795235815499
+      },
+      "41c5299f39f67737": {
+        "uuid": "41c5299f39f67737",
+        "title": "UART Bridge",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 12,
+        "source": "",
+        "version": "1795072869730",
+        "updateTime": 1795072869730
+      },
+      "b1736c639ad85163": {
+        "uuid": "b1736c639ad85163",
+        "title": "USB Console",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 11,
+        "source": "",
+        "version": "1794985510182",
+        "updateTime": 1794985510182
       }
     },
     "pcbs": {
@@ -53,8 +161,8 @@
         "board": "61ee3a7e923e4bc7",
         "parent_uuid": "",
         "source": "",
-        "version": "1794902464712",
-        "updateTime": 1794902464712
+        "version": "1795235815499",
+        "updateTime": 1795235815499
       }
     },
     "panels": {},

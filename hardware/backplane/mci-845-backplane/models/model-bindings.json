@@ -1,0 +1,1908 @@
+{
+  "component_count": 212,
+  "bindings": [
+    {
+      "designator": "J9",
+      "model": "RJ45-TH_HR911130A",
+      "binding": "21112b2bcfef4316930bd636ff253b92|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "J10",
+      "model": "USB-C_SMD-TYPE-C-31-M-12_1",
+      "binding": "2a22bb5af8894b85972aeeacf9cd92d0|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "U5",
+      "model": "LQFP-128_L20.0-W14.0-H1.6-P0.50-BL-EP7.0",
+      "binding": "f9c28c9a98294c26bcefba0ce96ba1ce|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "J7",
+      "model": "PJ-082BH",
+      "binding": "55328288df104bfbabbf75fc980b641d|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "J1",
+      "model": "CONN-SMD_1735284-5",
+      "binding": "098d0486d0a346ab82735d057e1fedac|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "J2",
+      "model": "CONN-SMD_1735284-5",
+      "binding": "098d0486d0a346ab82735d057e1fedac|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "J3",
+      "model": "CONN-SMD_1735284-5",
+      "binding": "098d0486d0a346ab82735d057e1fedac|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "J4",
+      "model": "CONN-SMD_1735284-5",
+      "binding": "098d0486d0a346ab82735d057e1fedac|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "J5",
+      "model": "CONN-SMD_1735284-5",
+      "binding": "098d0486d0a346ab82735d057e1fedac|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "J6",
+      "model": "CONN-SMD_1735284-5",
+      "binding": "098d0486d0a346ab82735d057e1fedac|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "U1",
+      "model": "QFN-24_L4.0-W4.0-H0.9-P0.50",
+      "binding": "97e59798435a404f940acb24f78a13ce|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "F1",
+      "model": "FUSE-SMD_L7.3-W4.3-reference",
+      "binding": "929e3e6a172d42b39a921533dce49079|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "D1",
+      "model": "SMB_L4.3-W3.6-LS5.4",
+      "binding": "0be9a10c06a74ab7b6b40ad1b5d71adc|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "Q1",
+      "model": "SOP-8_L4.9-W3.9-LS6.0-P1.27",
+      "binding": "ac658f5d71f14f53ab59ffa88c0b695d|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "Q2",
+      "model": "SOP-8_L4.9-W3.9-LS6.0-P1.27",
+      "binding": "ac658f5d71f14f53ab59ffa88c0b695d|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "D2",
+      "model": "SOD-123_L2.7-W1.8-LS3.7",
+      "binding": "01f4e49c15374c35a281576162868eba|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "F8",
+      "model": "FUSE-SMD_L3.2-W1.6-reference",
+      "binding": "be76f212bbea4dba990f93e8149b533a|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "J8",
+      "model": "mci-845-header-2p-reference",
+      "binding": "mci-845-header-2p-reference.step|C:\\Users\\saurl\\Documents\\LCEDA-Pro\\libraries",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "U2",
+      "model": "TSOT-23-6_L2.9-W1.6-H1.1-LS2.8-P0.95",
+      "binding": "3fae3a1420384b2b8b15a88610f8b219|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "U3",
+      "model": "TSOT-23-6_L2.9-W1.6-H1.1-LS2.8-P0.95",
+      "binding": "3fae3a1420384b2b8b15a88610f8b219|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "U4",
+      "model": "TSOT-23-6_L2.9-W1.6-H1.1-LS2.8-P0.95",
+      "binding": "3fae3a1420384b2b8b15a88610f8b219|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "Y1",
+      "model": "CRYSTAL-SMD_L5.0-W3.2-reference",
+      "binding": "d7c39c66443246ff83c2003c1e1eb6f1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "U9",
+      "model": "SOT-23-6_L2.9-W1.6-H1.5-LS2.8-P0.95",
+      "binding": "18da8f6c14a34920b3e136b5c401a119|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "J11",
+      "model": "",
+      "binding": "",
+      "placement": "top",
+      "status": "pending 2x10 model"
+    },
+    {
+      "designator": "U6",
+      "model": "LQFP-100_L14.0-W14.0-H1.4-LS16.0-P0.50",
+      "binding": "469e6cc70557486dbd01fd12ff814964|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "Y2",
+      "model": "CRYSTAL-SMD_L5.0-W3.2-reference",
+      "binding": "d7c39c66443246ff83c2003c1e1eb6f1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "U10",
+      "model": "SOT-9X3-3_L1.0-W0.8-H0.5-LD1.0-P0.35",
+      "binding": "79d73b47911b4bd5936cf94fb8ee3c25|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "U7",
+      "model": "SOT-23-5_L2.9-W1.6-LS2.8-P0.95",
+      "binding": "25b054d4db3343b88aee285a0a719589|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "U8",
+      "model": "SOT-23-5_L2.9-W1.6-LS2.8-P0.95",
+      "binding": "25b054d4db3343b88aee285a0a719589|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R25",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "R26",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "R27",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "R28",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "R29",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "R30",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "R31",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "R32",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "R33",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "R34",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "R35",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "R36",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C61",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C62",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "R19",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "R2",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R3",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C3",
+      "model": "C1206_L3.2-W1.6-H1.3",
+      "binding": "e4be705b945545a48e666415e3682bd8|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C4",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R4",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C5",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C6",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R1",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "F2",
+      "model": "FUSE-SMD_L3.2-W1.6-reference",
+      "binding": "be76f212bbea4dba990f93e8149b533a|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "F3",
+      "model": "FUSE-SMD_L3.2-W1.6-reference",
+      "binding": "be76f212bbea4dba990f93e8149b533a|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "F4",
+      "model": "FUSE-SMD_L3.2-W1.6-reference",
+      "binding": "be76f212bbea4dba990f93e8149b533a|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "F5",
+      "model": "FUSE-SMD_L3.2-W1.6-reference",
+      "binding": "be76f212bbea4dba990f93e8149b533a|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "F6",
+      "model": "FUSE-SMD_L3.2-W1.6-reference",
+      "binding": "be76f212bbea4dba990f93e8149b533a|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "F7",
+      "model": "FUSE-SMD_L3.2-W1.6-reference",
+      "binding": "be76f212bbea4dba990f93e8149b533a|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C1",
+      "model": "CAP-SMD_L6.6-W6.6-H7.0-LS7.2",
+      "binding": "901941a22e384f799727a46cfda77174|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C2",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C63",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C64",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C65",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C66",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C67",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C68",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C69",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C70",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C71",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C72",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C73",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C74",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C75",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C76",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C77",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C78",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C79",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C80",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C81",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C82",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C83",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C84",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C85",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C86",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C87",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C88",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C89",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C90",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C91",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C92",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C93",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C94",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C95",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C96",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C97",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C98",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C99",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C100",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C101",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C102",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C103",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C104",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C105",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C106",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C107",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C108",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C109",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C110",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C31",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C32",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C33",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C34",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C35",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C36",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C37",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C38",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C39",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C40",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C41",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C42",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C43",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C44",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C45",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C46",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C47",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C48",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C49",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C50",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C51",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C52",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C53",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C54",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C55",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C56",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C57",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C58",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C59",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C60",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C7",
+      "model": "C1206_L3.2-W1.6-H1.3",
+      "binding": "e4be705b945545a48e666415e3682bd8|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C8",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C9",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C10",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "L1",
+      "model": "IND-SMD_L6.0-W6.0-H4.5-reference",
+      "binding": "21c28650900a45ea9c2aba0b58e0dfe9|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "R5",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "R6",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C11",
+      "model": "C1210_L3.2-W2.5-H2.5",
+      "binding": "833068e7fe044595a6eec77c56179455|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C12",
+      "model": "C1210_L3.2-W2.5-H2.5",
+      "binding": "833068e7fe044595a6eec77c56179455|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C13",
+      "model": "C1206_L3.2-W1.6-H1.3",
+      "binding": "e4be705b945545a48e666415e3682bd8|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C14",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C15",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C16",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "L2",
+      "model": "IND-SMD_L6.0-W6.0-H4.5-reference",
+      "binding": "21c28650900a45ea9c2aba0b58e0dfe9|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "R7",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "R8",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C17",
+      "model": "C1210_L3.2-W2.5-H2.5",
+      "binding": "833068e7fe044595a6eec77c56179455|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C18",
+      "model": "C1210_L3.2-W2.5-H2.5",
+      "binding": "833068e7fe044595a6eec77c56179455|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C19",
+      "model": "C1206_L3.2-W1.6-H1.3",
+      "binding": "e4be705b945545a48e666415e3682bd8|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C20",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C21",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C22",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "L3",
+      "model": "IND-SMD_L6.0-W6.0-H4.5-reference",
+      "binding": "21c28650900a45ea9c2aba0b58e0dfe9|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "R9",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "R10",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C23",
+      "model": "CAP-SMD_L6.6-W6.6-H7.0-LS7.2",
+      "binding": "901941a22e384f799727a46cfda77174|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C24",
+      "model": "CAP-SMD_L6.6-W6.6-H7.0-LS7.2",
+      "binding": "901941a22e384f799727a46cfda77174|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "fitted"
+    },
+    {
+      "designator": "C25",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C26",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R11",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R12",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R13",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R14",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C27",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R15",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R16",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R17",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R18",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "L4",
+      "model": "IND-SMD_L2.0-W1.2-reference",
+      "binding": "dabddd86e8204879a6801252ad3585a5|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "L5",
+      "model": "IND-SMD_L2.0-W1.2-reference",
+      "binding": "dabddd86e8204879a6801252ad3585a5|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C28",
+      "model": "C1206_L3.2-W1.6-H1.3",
+      "binding": "e4be705b945545a48e666415e3682bd8|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C29",
+      "model": "C1206_L3.2-W1.6-H1.3",
+      "binding": "e4be705b945545a48e666415e3682bd8|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C30",
+      "model": "C1206_L3.2-W1.6-H1.3",
+      "binding": "e4be705b945545a48e666415e3682bd8|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C115",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C116",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R24",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C117",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C118",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C119",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C120",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C121",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C122",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C123",
+      "model": "C0603_L1.6-W0.8-H0.8",
+      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R20",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R21",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C111",
+      "model": "C0805_L2.0-W1.3-H1.3",
+      "binding": "1ba041120af144c991958decab20d241|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C112",
+      "model": "C0805_L2.0-W1.3-H1.3",
+      "binding": "1ba041120af144c991958decab20d241|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "C113",
+      "model": "C0805_L2.0-W1.3-H1.3",
+      "binding": "1ba041120af144c991958decab20d241|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R22",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R23",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "DNP"
+    },
+    {
+      "designator": "C114",
+      "model": "C0805_L2.0-W1.3-H1.3",
+      "binding": "1ba041120af144c991958decab20d241|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "MECH8",
+      "model": "mci-845-delta-7020",
+      "binding": "mci-845-delta-7020.step|C:\\Users\\saurl\\Documents\\LCEDA-Pro\\libraries",
+      "placement": "top",
+      "status": "mechanical"
+    },
+    {
+      "designator": "R37",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "DNP"
+    },
+    {
+      "designator": "R38",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "DNP"
+    },
+    {
+      "designator": "R39",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "DNP"
+    },
+    {
+      "designator": "R40",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "DNP"
+    },
+    {
+      "designator": "R41",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "DNP"
+    },
+    {
+      "designator": "R42",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "top",
+      "status": "DNP"
+    }
+  ],
+  "local_models": {
+    "mci-845-coreboard-vertical.step": "b15d0535838fd6e55eb383fd93deb323250ce8665b25902f9831dc73de751e7c",
+    "mci-845-delta-7020.step": "72e92e7b26ba7290ddffb57ae857bcd65184f6f1f13f5691c6fabd1fbd8764ab",
+    "mci-845-header-2p-reference.step": "628db8dc22c3f0fa574a6a90480b3e2dc7799fe48295531a15847dbfdb88b3c6",
+    "mci-845-header-3p-reference.step": "9b78dc2be6642606ef1d9e3aad5b4d2bcf4fd5e3f84b75d3fa7fc222776ffe3d",
+    "mci-845-socket-2x20-h17p5-reference.step": "051a9114315a415561fbbfed1e4777d7d242fc0c2c3c4f8e31e2140e2040d425",
+    "mci-845-standoff-m2p5-h20.step": "f98831d808656c3006066472b83bd5e5f1e01251f89b76999ed9681d1570f119",
+    "mci-845-zero3w-stock.step": "1eac96aa8804f7270e08610ebd99bf0eccfd26d39d859fae76d119406694ded3"
+  },
+  "main_project": "hardware/backplane/mci-845-backplane/mci-845-backplane.eprj3",
+  "scope": "3D package and assembly integration; electrical nets preserved; routing remains in progress",
+  "mounting": {
+    "connection": "User-configurable Dupont leads; no directly mating baseboard 40-pin socket",
+    "zero_holes_mm": [
+      [
+        129.4001,
+        3.6001
+      ],
+      [
+        129.4001,
+        61.4501
+      ],
+      [
+        106.5001,
+        3.6001
+      ],
+      [
+        106.5501,
+        61.4001
+      ]
+    ],
+    "baseboard_hole_diameter_mm": 2.9,
+    "copper_keepout_diameter_mm": 6,
+    "model_scope": "Zero and all four posts removed; six mounting holes and their keepouts retained"
+  },
+  "power_placement": {
+    "changes": [
+      {
+        "designator": "C1",
+        "old_mm": [
+          82.0000011,
+          11.999998859999998
+        ],
+        "new_mm": [
+          102,
+          14
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "F1",
+        "old_mm": [
+          105.99999881999999,
+          27.99999988
+        ],
+        "new_mm": [
+          110,
+          26
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "J11",
+        "old_mm": [
+          74.99999986,
+          57.0000003
+        ],
+        "new_mm": [
+          102,
+          52
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "U4",
+        "old_mm": [
+          29.000000419999996,
+          16.00000102
+        ],
+        "new_mm": [
+          28.5,
+          8.5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "L3",
+        "old_mm": [
+          34.50000212,
+          12.000001399999999
+        ],
+        "new_mm": [
+          34.5,
+          8.5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C19",
+        "old_mm": [
+          25.0000008,
+          19.0000001
+        ],
+        "new_mm": [
+          25,
+          11.5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C20",
+        "old_mm": [
+          29.000000419999996,
+          19.0000001
+        ],
+        "new_mm": [
+          29,
+          12
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C21",
+        "old_mm": [
+          25.999998799999997,
+          12.999999399999998
+        ],
+        "new_mm": [
+          26,
+          5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C22",
+        "old_mm": [
+          29.000000419999996,
+          12.999999399999998
+        ],
+        "new_mm": [
+          29,
+          5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "R9",
+        "old_mm": [
+          25.0000008,
+          11.00000086
+        ],
+        "new_mm": [
+          25,
+          7.5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "R10",
+        "old_mm": [
+          25.0000008,
+          15.000000479999999
+        ],
+        "new_mm": [
+          25,
+          9.5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C23",
+        "old_mm": [
+          43.49999936,
+          14.999997939999997
+        ],
+        "new_mm": [
+          42,
+          5.5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C24",
+        "old_mm": [
+          39.00000074,
+          25.0000008
+        ],
+        "new_mm": [
+          50,
+          5.5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "U3",
+        "old_mm": [
+          54.00000122,
+          21.500000179999997
+        ],
+        "new_mm": [
+          57,
+          8.5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "L2",
+        "old_mm": [
+          59.99999937999999,
+          16.00000102
+        ],
+        "new_mm": [
+          63,
+          8.5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C13",
+        "old_mm": [
+          49.99999905999999,
+          19.0000001
+        ],
+        "new_mm": [
+          53,
+          12
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C14",
+        "old_mm": [
+          50.5000006,
+          21.000001179999998
+        ],
+        "new_mm": [
+          57,
+          12
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C15",
+        "old_mm": [
+          50.999999599999995,
+          12.999999399999998
+        ],
+        "new_mm": [
+          55,
+          3.2
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C16",
+        "old_mm": [
+          54.00000122,
+          12.999999399999998
+        ],
+        "new_mm": [
+          58,
+          5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "R7",
+        "old_mm": [
+          49.99999905999999,
+          11.00000086
+        ],
+        "new_mm": [
+          53.5,
+          10
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "R8",
+        "old_mm": [
+          49.99999905999999,
+          15.000000479999999
+        ],
+        "new_mm": [
+          60,
+          12
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C17",
+        "old_mm": [
+          66.00000008,
+          16.999999019999997
+        ],
+        "new_mm": [
+          69,
+          10
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C18",
+        "old_mm": [
+          66.00000008,
+          12.999999399999998
+        ],
+        "new_mm": [
+          69,
+          5.5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "U2",
+        "old_mm": [
+          76.0000004,
+          16.00000102
+        ],
+        "new_mm": [
+          77,
+          8.5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "L1",
+        "old_mm": [
+          82.0000011,
+          16.00000102
+        ],
+        "new_mm": [
+          83,
+          8.5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C7",
+        "old_mm": [
+          72.00000078,
+          19.0000001
+        ],
+        "new_mm": [
+          73.5,
+          12
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C8",
+        "old_mm": [
+          76.0000004,
+          19.0000001
+        ],
+        "new_mm": [
+          77,
+          12
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C9",
+        "old_mm": [
+          72.99999878,
+          12.999999399999998
+        ],
+        "new_mm": [
+          74,
+          5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C10",
+        "old_mm": [
+          76.0000004,
+          12.999999399999998
+        ],
+        "new_mm": [
+          77,
+          5
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "R5",
+        "old_mm": [
+          72.00000078,
+          11.00000086
+        ],
+        "new_mm": [
+          73,
+          8
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "R6",
+        "old_mm": [
+          72.00000078,
+          15.000000479999999
+        ],
+        "new_mm": [
+          73,
+          10
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C11",
+        "old_mm": [
+          83.99999964,
+          21.999999179999996
+        ],
+        "new_mm": [
+          89,
+          10
+        ],
+        "layer": "top"
+      },
+      {
+        "designator": "C12",
+        "old_mm": [
+          96.00000103999999,
+          12.999999399999998
+        ],
+        "new_mm": [
+          94,
+          6
+        ],
+        "layer": "top"
+      }
+    ],
+    "routing_status": "Relocated power stages require new routing, copper fills and DRC"
+  },
+  "validation": {
+    "loaded_component_count": 206,
+    "top_side_relocated_components": 33,
+    "preserved_pad_nets": 847,
+    "mounting_holes_unchanged": true,
+    "native_export_z_min_mm": -4,
+    "minimum_large_package_to_core_clearance_mm": 4.6784350388
+  },
+  "management_header": {
+    "designator": "J11",
+    "footprint": "2x10 2.54 mm through-hole",
+    "model_status": "pending"
+  },
+  "slot_reset_links": {
+    "designators": [
+      "R37",
+      "R38",
+      "R39",
+      "R40",
+      "R41",
+      "R42"
+    ],
+    "status": "DNP",
+    "placement": "top"
+  }
+}

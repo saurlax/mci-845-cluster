@@ -1,2 +1,7 @@
 # Local reference materials
 /references/
+
+# Local runtime artifacts
+__pycache__/
+*.py[cod]
+debug.log

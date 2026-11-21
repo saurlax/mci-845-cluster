@@ -1,0 +1,5 @@
+# Downloaded third-party assets and local inspection exports.
+*.3mf
+*.stl
+*.glb
+*.png

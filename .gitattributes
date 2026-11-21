@@ -1,0 +1,3 @@
+# Preserve exported CAD models byte for byte.
+*.step -text -diff
+*.stl -text -diff
