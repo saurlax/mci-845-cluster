@@ -262,7 +262,9 @@ def export_eda_models(model, directory):
 
 if __name__ == "__main__":
     directory = Path(__file__).resolve().parent
+    assembly_dir = directory / "assembly"
+    assembly_dir.mkdir(exist_ok=True)
     model = build()
-    model.export(str(directory / "mci-845-coreboard.step"))
-    export_glb(model, directory / "mci-845-coreboard.glb")
+    model.export(str(assembly_dir / "mci-845-coreboard.step"))
+    export_glb(model, assembly_dir / "mci-845-coreboard.glb")
     export_eda_models(model, directory / "eda-models")

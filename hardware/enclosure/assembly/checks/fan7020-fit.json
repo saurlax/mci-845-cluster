@@ -1,0 +1,82 @@
+{
+  "model": "Delta AFC0712DD-TP10",
+  "units": "mm",
+  "official_step_url": "https://www.delta-fan.com/Download/3D/AFC0712DD-TP10.stp",
+  "step_sha256": "176d43193ac46e487a80c248d4c9f870d0f42b157cf80faf3bab40da91c827bf",
+  "source_assembly_sha256": "d78572745db11927184dac23aceecef08ccd8aaf8396be04d8909e6e57cf88bf",
+  "vendor_to_eda_transform": [
+    [
+      0.0,
+      1.0,
+      0.0,
+      -27.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      32.5
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      35.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "frame_bounds": [
+    -27.000000100000285,
+    -2.500016920000013,
+    -1.6925580011925456e-05,
+    -6.9999998999999855,
+    67.50001691581,
+    70.00001692514003
+  ],
+  "frame_center_yz": [
+    32.5,
+    35
+  ],
+  "backplane_facing_surface_x": -7,
+  "core_clearances": {
+    "0": 2.115,
+    "1": 2.1149999999999958,
+    "2": 2.1149999999999913
+  },
+  "backplane_width": 65,
+  "frame_overhang_y": [
+    2.5,
+    2.5
+  ],
+  "fan_frame_top_above_core_top": 5.150000000000006,
+  "mount_pitch": [
+    61.5,
+    61.5
+  ],
+  "mount_hole_diameter": 4.3,
+  "mount_hole_axes_yz": [
+    [
+      1.75,
+      4.25
+    ],
+    [
+      63.25,
+      4.25
+    ],
+    [
+      1.75,
+      65.75
+    ],
+    [
+      63.25,
+      65.75
+    ]
+  ],
+  "nominal_airflow_direction": "+X; left to right through the core boards",
+  "model_scope": "Official external-envelope STEP; no frame-size scaling"
+}

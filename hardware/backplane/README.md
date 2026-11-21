@@ -2,6 +2,8 @@
 
 在此目录存放完整的嘉立创 EDA 专业版 v4 文件夹工程。提交时保留工程索引（`.eprj3`）、原理图（`.esch2`）、PCB 布局（`.epcb2`）和工程引用的本地库文件。
 
+[主工程](mci-845-backplane/) · [140 × 65 mm 同步工程](variants/140x65/) · [管理排针](design/management-header.md) · [顶面供电布局](design/power/top-power-placement.md) · [迁移脚本](tools/migrations/README.md)
+
 ## Electrical Design
 
 在桌面客户端打开 [MCI 845 Backplane](mci-845-backplane/mci-845-backplane.eprj3)。`J1` 至 `J6` 分别对应 Slot 0 至 Slot 5，`J1` 为管理节点。每槽按[照片对应表](../../docs/coreboard-connector.md#preview-mapping)接入接地、四对以太网、12 V 和两根 UART 信号。复位触点 R05 通过默认不装的 0 Ω 电阻接到管理排针。母座焊盘映射、12 V 输入范围、串口电平及差分耦合方式按实物核对。
@@ -26,7 +28,7 @@
 
 主工程 PCB 外形为 **140 × 65 mm**，R3 圆角。板框 X = −7–133、Y = 0–65 mm。底板共有六个 M2.5 安装孔：两个底壳孔位于 (−3.5, 3.5)、(5.5, 47) mm，另外四孔对应 Zero 安装孔。孔径 Ø2.9 mm，禁铜直径 Ø6 mm。
 
-左侧风扇采用台达 AFC0712DD-TP10 **7020** 官方模型，包络 X = −27–−7、Y = −2.5–67.5、Z = 0–70 mm，与左列核心板最小实体净空为 2.115 mm。风框在 PCB 两侧各伸出 2.5 mm。[Fan Fit](../enclosure/fan7020-fit.md)
+左侧风扇采用台达 AFC0712DD-TP10 **7020** 官方模型，包络 X = −27–−7、Y = −2.5–67.5、Z = 0–70 mm，与左列核心板最小实体净空为 2.115 mm。风框在 PCB 两侧各伸出 2.5 mm。[Fan Fit](../enclosure/assembly/fan7020-fit.md)
 
 ## Management Board and Models
 
@@ -39,13 +41,13 @@ Zero 安装孔对应的 PCB 平面范围为 X = 103–133、Y = 0–65 mm，前�
 | Inner lower / MH5 | 106.5001 | 3.6001 |
 | Inner upper / MH6 | 106.5501 | 61.4001 |
 
-安装高度根据用户选用的铜柱、散热片、网口净空与杜邦线插头空间确定。当前三维装配显示底板、六块 845 和 7020 风扇。[Mounting Details](../enclosure/zero-dupont-mount.md)
+安装高度根据用户选用的铜柱、散热片、网口净空与杜邦线插头空间确定。当前三维装配显示底板、六块 845 和 7020 风扇。[Mounting Details](../enclosure/assembly/zero-dupont-mount.md)
 
 主工程包含 205 个电气组件和 7 个机械组件。已绑定的 3D 模型见 [Model Assets](mci-845-backplane/models/README.md)。
 
-管理接口 J11 采用 **2×10、2.54 mm 直插排针**，放在网口侧的 PCB 顶面。原理图和 PCB 已分配 GND、MDC、MDIO 和六路复位网络。六路复位各通过一颗默认不装的 0 Ω 电阻接至槽位 R05。针位和装配条件见 [Management Header](management-header.md)。排针待布线。六路 UART 经 CH348L 走 USB-C。
+管理接口 J11 采用 **2×10、2.54 mm 直插排针**，放在网口侧的 PCB 顶面。原理图和 PCB 已分配 GND、MDC、MDIO 和六路复位网络。六路复位各通过一颗默认不装的 0 Ω 电阻接至槽位 R05。针位和装配条件见 [Management Header](design/management-header.md)。排针待布线。六路 UART 经 CH348L 走 USB-C。
 
-[140 × 65 mm 同步试排工程](variants/140x65/mci-845-backplane-140x65.eprj3) · [Native EDA Assembly](../enclosure/mci-845-eda-assembly-140x65-7020.glb)
+[140 × 65 mm 同步试排工程](variants/140x65/mci-845-backplane-140x65.eprj3) · [Native EDA Assembly](../enclosure/assembly/preview/mci-845-eda-assembly-140x65-7020.glb)
 
 ## Panel and Ethernet
 
@@ -67,7 +69,7 @@ Zero 安装孔对应的 PCB 平面范围为 X = 103–133、Y = 0–65 mm，前�
 
 铺铜规划：内层 1 为 GND，内层 2 为 BUS_12V。底面为 DC 入口、主保险后、反接保护后和电子保险输出分别铺铜，六槽支路覆盖保险输出及母座 12 V 触点。叠层初选外层 2 oz、独立连续的地参考层。铜宽、端子焊盘颈部、保险焊盘和换层过孔按最大持续电流、允许压降和温升定尺寸。千兆差分线按选定叠层做 100 Ω 阻抗匹配，确定线宽前核对 2 oz 工艺的最小线宽线距。 [嘉立创制造能力](https://www.jlc.com/portal/vtechnology.html) · [IPC-2152](https://www.ipc.org/TOC/IPC-2152.pdf)
 
-三路降压 U2–U4、L1–L3 及其配套阻容已移至顶面前沿；C1、C23、C24 三颗大电容、主保险 F1 和调试排针 J11 同步换到顶面。C1 是 12 V 母线储能电容，C23/C24 为交换芯片 1.1 V 输出滤波电容。输入保护集中在 DC 口旁。[Top-Side Power Placement](top-power-placement.md) 记录各器件位置与电容用途。按持续 8 A 估算，主供电路径每增加 10 mΩ 串联电阻就会产生 0.64 W 损耗和 80 mV 压降。样机装入外壳后，在六槽同时满载时测量插头触点、F1、Q1/Q2 和 U1 的压降与温升，同时记录顶面降压区、底面交换芯片及靠出风端核心板的温度。铜柱高度应同时满足底面最高器件净空和风道要求。
+三路降压 U2–U4、L1–L3 及其配套阻容已移至顶面前沿；C1、C23、C24 三颗大电容、主保险 F1 和调试排针 J11 同步换到顶面。C1 是 12 V 母线储能电容，C23/C24 为交换芯片 1.1 V 输出滤波电容。输入保护集中在 DC 口旁。[Top-Side Power Placement](design/power/top-power-placement.md) 记录各器件位置与电容用途。按持续 8 A 估算，主供电路径每增加 10 mΩ 串联电阻就会产生 0.64 W 损耗和 80 mV 压降。样机装入外壳后，在六槽同时满载时测量插头触点、F1、Q1/Q2 和 U1 的压降与温升，同时记录顶面降压区、底面交换芯片及靠出风端核心板的温度。铜柱高度应同时满足底面最高器件净空和风道要求。
 
 ## Fabrication
 

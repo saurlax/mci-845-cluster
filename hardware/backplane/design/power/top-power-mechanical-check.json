@@ -1,0 +1,14 @@
+{
+  "units": "mm",
+  "method": "Conservative package boxes against all six core STEP surfaces",
+  "minimum_package_to_core_clearances": {
+    "C1": 4.984999999999985,
+    "C23": 6.919999999999991,
+    "C24": 6.919999999999996,
+    "L1": 5.1546095875439395,
+    "L2": 5.154609587543943,
+    "L3": 4.678435038841949,
+    "F1": 13.633916391263348,
+    "J11": 6.667358570953364
+  }
+}

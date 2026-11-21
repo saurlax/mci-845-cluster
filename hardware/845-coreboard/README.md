@@ -16,8 +16,8 @@
 
 ## CAD Files
 
-- [STEP assembly](mci-845-coreboard.step) 用于 CAD 导入和测量。
-- [GLB assembly](mci-845-coreboard.glb) 用于彩色 3D 预览，文件单位为米。
+- [STEP assembly](assembly/mci-845-coreboard.step) 用于 CAD 导入和测量。
+- [GLB assembly](assembly/mci-845-coreboard.glb) 用于彩色 3D 预览，文件单位为米。
 - [CadQuery source](model.py) 可修改尺寸。用 CadQuery 2.8.0 执行 `python model.py`，重新生成整板模型和 `eda-models` 内各器件的 STEP。丝印使用 Arial 字体。
 
 ## Dimensions

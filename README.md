@@ -7,7 +7,9 @@
 | Directory | Contents |
 | --- | --- |
 | [hardware/backplane](hardware/backplane/) | 集群底板的原理图、PCB 布局和嘉立创 EDA 工程 |
-| [hardware/enclosure](hardware/enclosure/) | 外壳、支架和风扇座的机械设计 |
+| [hardware/845-coreboard](hardware/845-coreboard/) | 核心板机械模型和 EDA 库 |
+| [hardware/enclosure](hardware/enclosure/) | 打印底座、集装箱外壳概念和装配 |
+| [hardware/reference-models](hardware/reference-models/) | 供应商 STEP 下载说明和校验值 |
 | [software/controller](software/controller/) | Slot 0 上运行的集群管理软件和部署配置 |
 | [docs](docs/) | [系统架构](docs/architecture.md)、[组装](docs/assembly.md)和[上电调试](docs/bringup.md) |
 

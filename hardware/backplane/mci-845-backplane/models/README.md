@@ -6,7 +6,7 @@
 
 当前机器的本地模型库为 `C:\Users\saurl\Documents\LCEDA-Pro\libraries`，模型文件已安装。在其他机器上，将本目录绑定的 STEP 文件复制到嘉立创 EDA 专业版配置的本地 3D 模型库，并更新工程模型绑定中的库路径。路径按 Windows 本地目录格式保存。
 
-7020 模型来自台达官方 STEP。辅助排针为尺寸参考模型。Zero、铜柱与加高排母 STEP 保留为历史试排资源，当前工程已解除这些模型及其机械封装的引用。
+7020 模型来自台达官方 STEP。辅助排针为尺寸参考模型。Zero 官方 STEP 按[下载说明](../../../reference-models/radxa-zero-3w/README.md)保存在本地。铜柱与加高排母 STEP 保留为历史试排资源；当前工程仅保留 Zero 安装孔。
 
 ## Component Packages
 
@@ -16,4 +16,4 @@
 
 ## Preview
 
-[Native EDA Assembly](../../../enclosure/mci-845-eda-assembly-140x65-7020.glb) 由 EDA 原生三维导出转换，导出时关闭缺失模型自动生成。
+[Native EDA Assembly](../../../enclosure/assembly/preview/mci-845-eda-assembly-140x65-7020.glb) 由 EDA 原生三维导出转换，导出时关闭缺失模型自动生成。

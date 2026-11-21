@@ -1,0 +1,85 @@
+{
+  "tray": {
+    "valid": true,
+    "solids": 1,
+    "watertight": true,
+    "volume_mm3": 49130.49011758904,
+    "print_size_mm": [
+      172.0,
+      77.0,
+      16.0
+    ]
+  },
+  "fan-panel": {
+    "valid": true,
+    "solids": 1,
+    "watertight": true,
+    "volume_mm3": 7872.539228040928,
+    "print_size_mm": [
+      86.0,
+      76.0,
+      3.000000000000014
+    ]
+  },
+  "units": "mm",
+  "pcb_top_z": 0,
+  "pcb_support_z": -1.6,
+  "floor_top_z": -10,
+  "bottom_component_min_z": -4.0,
+  "bottom_component_floor_gap": 6.0,
+  "fan_envelope_intersection_mm3": 0,
+  "fan_panel_to_frame_gap": 2,
+  "fan_side_wall_gap": 1,
+  "pcb_mount_holes": [
+    [
+      -3.5,
+      3.5
+    ],
+    [
+      5.5,
+      47
+    ],
+    [
+      129.4001,
+      3.6001
+    ],
+    [
+      129.4001,
+      61.4501
+    ],
+    [
+      106.5001,
+      3.6001
+    ],
+    [
+      106.5501,
+      61.4001
+    ]
+  ],
+  "fan_mount_yz": [
+    [
+      1.75,
+      4.25
+    ],
+    [
+      1.75,
+      65.75
+    ],
+    [
+      63.25,
+      4.25
+    ],
+    [
+      63.25,
+      65.75
+    ]
+  ],
+  "panel_tray_intersection_mm3": 0.0,
+  "fan_screw_tip_x": -22,
+  "fan_screw_tip_recess_from_inner_face": 15,
+  "fasteners": {
+    "fan": "4 x 5x10 fan self-tapping screws, 2 mm spacers",
+    "panel": "2 x M3x10 plastic-thread screws",
+    "pcb": "6 x M2.5x6 plastic-thread screws"
+  }
+}
