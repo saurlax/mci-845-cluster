@@ -6,7 +6,7 @@
 
 ## Electrical Design
 
-在桌面客户端打开 [MCI 845 Backplane](mci-845-backplane/mci-845-backplane.eprj3)。`J1` 至 `J6` 分别对应 Slot 0 至 Slot 5，`J1` 为管理节点。每槽按[照片对应表](../../docs/coreboard-connector.md#preview-mapping)接入接地、四对以太网、12 V 和两根 UART 信号。复位触点 R05 通过默认不装的 0 Ω 电阻接到管理排针。母座焊盘映射、12 V 输入范围、串口电平及差分耦合方式按实物核对。
+在桌面客户端打开 [MCI 845 Backplane](mci-845-backplane/mci-845-backplane.eprj3)。`J1` 至 `J6` 分别对应 Slot 0 至 Slot 5，`J1` 为管理节点。每槽按[核心板触点定义](../../docs/coreboard-connector.md#preview-mapping)接入接地、四对以太网、12 V 和两根 UART 信号。复位触点 R05 通过默认不装的 0 Ω 电阻接到管理排针。母座焊盘映射、12 V 输入范围、串口电平及差分耦合方式按实物核对。
 
 六块核心板按两列三行排列，从背板上方垂直插入。核心板侧是 22 触点公头，背板侧是顶插母座。左列从上到下为 Slot 0、1、2，右列为 Slot 3、4、5。7020 风扇在左侧，外部接口集中在右侧。
 

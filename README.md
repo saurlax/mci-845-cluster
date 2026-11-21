@@ -17,4 +17,4 @@
 
 每次送厂打样用 Git 标签记录对应的设计版本，并在 GitHub Releases 附上 Gerber、贴片 BOM、贴片坐标和打印文件。发布说明记录 PCB 修订号、外壳版本和验证过的核心板固件版本。
 
-核心板固件和刷机工具见 [mci-845-firmware](https://github.com/saurlax/mci-845-firmware)。核心板背景和集群形态分别参考[骁龙 845 核心板折腾记](https://saurlax.com/blog/mciserver-845)和 [Sipeed NanoCluster](https://wiki.sipeed.com/hardware/zh/cluster/NanoCluster/index.html)。
+核心板固件和刷机工具见 [mci-845-firmware](https://github.com/saurlax/mci-845-firmware)。集群形态参考 [Sipeed NanoCluster](https://wiki.sipeed.com/hardware/zh/cluster/NanoCluster/index.html)。
