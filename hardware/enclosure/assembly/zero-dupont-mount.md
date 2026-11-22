@@ -1,6 +1,6 @@
 # Four-Post Dupont Mount
 
-底板为 Zero 预留四个固定孔及禁铜区，用户可自行安装管理板并通过杜邦线连接。Zero 安装范围为 X = 103–133、Y = 0–65 mm，前后边和接口侧边与底板对齐。板框与槽位布局见 [Cluster Backplane](../../backplane/README.md#board-outline-and-mounting)。
+底板为 Zero 预留四个固定孔及禁铜区，用户可自行安装管理板并通过杜邦线连接。Zero 安装范围为 X = 103–133、Y = 0–65 mm，前后边和接口侧边与底板对齐。板框与槽位布局见 [Cluster Backplane](../../README.md#board-outline-and-mounting)。
 
 ## Mounting Holes
 
@@ -25,8 +25,8 @@
 
 铜柱高度按散热片、RJ45、杜邦插头外壳和出线弯曲空间确定。托盘支撑高度同时满足底面器件净空和风道要求。
 
-管理线束接法见 [Management Header](../../backplane/design/management-header.md)，串口接法见 [USB Console](../../backplane/README.md#usb-console)。
+管理线束接法见 [Management Header](../../design/management-header.md)，串口接法见 [USB Console](../../README.md#usb-console)。
 
 ## Native EDA Preview
 
-[Main EDA Project](../../backplane/mci-845-backplane/mci-845-backplane.eprj3) · [3D Assembly](preview/mci-845-eda-assembly-140x65-7020.glb) · [Interface View](preview/eda-zero3w-interface-closeup.png)
+[Main EDA Project](../../mci-845-cluster.eprj3) · [3D Assembly](preview/mci-845-eda-assembly-140x65-7020.glb) · [Interface View](preview/eda-zero3w-interface-closeup.png)

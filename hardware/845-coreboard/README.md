@@ -28,15 +28,17 @@ MCI 845 核心板使用 **SATA 外形的 22 触点连接器**，通过配套转�
 | Pad | 7 | 6 | 5 | 4 | 3 | 2 | 1 |
 | Function | 12V | 12V | 12V | 12V | RESET | UART TX | UART RX |
 
-长段的 MDI0 至 MDI3 是四对千兆以太网差分线，+ 和 − 表示各对的正端和负端。GND 为地。
+长段的 MDI0 至 MDI3 是四对千兆以太网差分线，+ 和 − 表示各对的正端和负端。GND 为地。V2.1 六槽背板的端口分配和直连接法见 [Panel and Ethernet](../README.md#panel-and-ethernet)。
 
-短段 VIN 按 12 V 输入设计。UART TX、RX 分别指核心板发送和接收。底板的串口和复位接法见 [USB Console](../backplane/README.md#usb-console) 和 [Management Header](../backplane/design/management-header.md)。
+短段 VIN 按 12 V 输入设计。UART TX、RX 分别指核心板发送和接收。底板的串口和复位接法见 [USB Console](../README.md#usb-console) 和 [Reset and Power Header](../design/management-header.md)。
+
+V2.1 核心板正常运行时，R05（RESET，母座焊盘 3）对地实测为 0 V。R05 直连 J11。1.8 V 高有效是待测假设，允许输入电压、触发极性与脉宽待验证。
 
 ### Reference Evidence
 
 本地照片位于 `references/mci-845/sata-interface/`。`05-k001-v2-3-contacts.jpg` 给出触点编号的观察方向，`01-coreboard-and-12v-adapter.jpg` 显示转接板的 `DC12V` 丝印，`02-h845d-adapter-top.jpg` 和 `06-feng-adapter-render-top.jpg` 可见长段到 RJ45 一侧的走线。
 
-长段线序、差分极性和接地触点依据此前记录的 15 针标注特写，特写中的网卡丝印为 RTL8153。照片 03 和 05 分别显示 `MCI_K001_V2_1` 和 `MCI_K001_V2_3`。首件按实际版本核对插合与导通、电源触点和输入电压范围、PHY 耦合、UART 方向和空闲电平，以及复位触发电平。
+长段线序、差分极性和接地触点依据此前记录的 15 针标注特写，特写中的网卡丝印为 RTL8153。照片 03 和 05 分别显示 `MCI_K001_V2_1` 和 `MCI_K001_V2_3`。首件按实际版本核对插合与导通、电源触点和输入电压范围、UART 方向和空闲电平，以及复位触发电平。
 
 器件资料见 [AX88179 数据手册](https://downloads.codico.com/misc/ROHS%202011%2065%20EU%20ab%201.1.2013/Asix/AX88179_Datasheet_v122.pdf) · [Amphenol 22 触点连接器图纸](https://www.amphenol-cs.com/product/sata00102253a.html)。
 
@@ -68,6 +70,10 @@ MCI 845 核心板使用 **SATA 外形的 22 触点连接器**，通过配套转�
 | L14 | — | | |
 | L15 | — | | |
 
+## Onboard UART Pads
+
+`MCI_K001_V2_1` 的 USB-C 旁有三个串口焊孔，实板丝印为 `TX`、`RX`、`GND`。该版本实测中，TX 和 RX 焊孔与金手指均未测得直通。焊孔的逻辑电压、与金手指串口之间的电路关系及启动时是否输出日志仍待确认。
+
 ## JLCEDA Pro Library
 
 [MCI 845 Mechanical](MCI%20845%20Mechanical.elib) 是嘉立创 EDA 专业版的本地器件库。三个器件各有独立符号、外形封装和 STEP 绑定，可放置到 PCB 上用于装配预览。封装无铜焊盘，器件不计入 BOM。
@@ -84,7 +90,6 @@ MCI 845 核心板使用 **SATA 外形的 22 触点连接器**，通过配套转�
 
 - [STEP assembly](assembly/mci-845-coreboard.step) 用于 CAD 导入和测量。
 - [GLB assembly](assembly/mci-845-coreboard.glb) 用于彩色 3D 预览，文件单位为米。
-- [CadQuery source](model.py) 可修改尺寸。用 CadQuery 2.8.0 执行 `python model.py`，重新生成整板模型和 `eda-models` 内各器件的 STEP。丝印使用 Arial 字体。
 
 ## Dimensions
 

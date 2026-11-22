@@ -4,10 +4,10 @@
 
 ![Assembly](preview/printed-base-assembly.png)
 
-[Interactive assembly](preview/printed-base-140x65-7020.glb) · [Tray STL](print/printed-base-tray.stl) · [Fan panel STL](print/printed-base-fan-panel.stl) · [Editable STEP](cad/printed-base-assembly.step) · [CAD source](scripts/printed-base.py)
+[Interactive assembly](preview/printed-base-140x65-7020.glb) · [Tray STL](print/printed-base-tray.stl) · [Fan panel STL](print/printed-base-fan-panel.stl) · [Editable STEP](cad/printed-base-assembly.step)
 
 
-目录入口：[打印文件](print/) · [CAD](cad/) · [预览](preview/) · [检查记录](checks/) · [生成脚本](scripts/)
+目录入口：[打印文件](print/) · [CAD](cad/) · [预览](preview/) · [检查记录](checks/)
 
 ## Dimensions
 
@@ -54,5 +54,3 @@
 ## Verification
 
 两个打印件均为有效的单一实体，STL 网格封闭；面板与托盘装配实体交叠体积为 0。底部器件距托盘底面 6 mm，PCB 固定孔沿用当前 EDA 六孔坐标，风扇固定孔沿用[台达官方尺寸](https://www.delta-fan.com/Download/Spec/AFC0712DD-TP10.pdf)。检查结果见 [Geometry checks](checks/printed-base-check.json)。首件需验证打印收缩、塑料螺钉咬合及风扇紧固件工具空间；运行温度由实机负载测试确认。
-
-重新生成：`python hardware/enclosure/printed-base/scripts/printed-base.py`，依赖 CadQuery、NumPy 和 Trimesh。渲染使用 `blender -b --python hardware/enclosure/printed-base/scripts/render-printed-base.py`。
