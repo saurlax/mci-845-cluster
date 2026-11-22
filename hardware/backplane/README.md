@@ -6,7 +6,7 @@
 
 ## Electrical Design
 
-在桌面客户端打开 [MCI 845 Backplane](mci-845-backplane/mci-845-backplane.eprj3)。`J1` 至 `J6` 分别对应 Slot 0 至 Slot 5，`J1` 为管理节点。每槽按[核心板触点定义](../../docs/coreboard-connector.md#preview-mapping)接入接地、四对以太网、12 V 和两根 UART 信号。复位触点 R05 通过默认不装的 0 Ω 电阻接到管理排针。母座焊盘映射、12 V 输入范围、串口电平及差分耦合方式按实物核对。
+在桌面客户端打开 [MCI 845 Backplane](mci-845-backplane/mci-845-backplane.eprj3)。槽位编号与角色见 [System Architecture](../../docs/architecture.md)，各槽母座的针脚和差分线序见 [Core Board Connector](../845-coreboard/README.md#pin-mapping)。
 
 主工程采用以下五张原理图。
 
@@ -24,7 +24,7 @@
 
 六个 TE 1735284-5 母座从 PCB 顶面看均旋转 180°，7 触点段在右，15 触点段在左，散热片朝 −Y。母座与无焊盘、不计入 BOM 的 MECH1–MECH6 分开放置。机械模型取自 [845 核心板库](../845-coreboard/README.md)。[母座资料](https://www.te.com/en/product-1735284-5.html)
 
-坐标沿用 EDA 工程原点，单位为 mm。左板边 X = −7，下板边 Y = 0。表中为母座封装原点；核心板 STEP 插合端面中心相对各母座原点偏移 (−0.235, +2.300)，按模型的两组触点中心线对齐。插合端面暂放在背板顶面上方 6.20 mm，距母座外壳顶部约 3.64 mm。最终插合深度、键位、触点编号与电源极性需用实板配对核实。
+坐标沿用 EDA 工程原点，单位为 mm。左板边 X = −7，下板边 Y = 0。表中为母座封装原点；核心板 STEP 插合端面中心相对各母座原点偏移 (−0.235, +2.300)，按模型的两组触点中心线对齐。插合端面暂放在背板顶面上方 6.20 mm，距母座外壳顶部约 3.64 mm。最终插合深度用实板和母座配对核实。
 
 | Row | Left slot | X | Y | Right slot | X | Y |
 | --- | --- | ---: | ---: | --- | ---: | ---: |
@@ -36,26 +36,17 @@
 
 ## Board Outline and Mounting
 
-主工程 PCB 外形为 **140 × 65 mm**，R3 圆角。板框 X = −7–133、Y = 0–65 mm。底板共有六个 M2.5 安装孔：两个底壳孔位于 (−3.5, 3.5)、(5.5, 47) mm，另外四孔对应 Zero 安装孔。孔径 Ø2.9 mm，禁铜直径 Ø6 mm。
+主工程 PCB 外形为 **140 × 65 mm**，R3 圆角。板框 X = −7–133、Y = 0–65 mm。六个安装孔的坐标、孔径和禁铜区见 [Mounting Holes](../enclosure/assembly/zero-dupont-mount.md#mounting-holes)。
 
-左侧风扇采用台达 AFC0712DD-TP10 **7020** 官方模型，包络 X = −27–−7、Y = −2.5–67.5、Z = 0–70 mm，与左列核心板最小实体净空为 2.115 mm。风框在 PCB 两侧各伸出 2.5 mm。[Fan Fit](../enclosure/assembly/fan7020-fit.md)
+左侧风扇的型号、位置和核心板净空见 [7020 Fan Fit](../enclosure/assembly/fan7020-fit.md)。
 
 ## Management Board and Models
 
-Zero 安装孔对应的 PCB 平面范围为 X = 103–133、Y = 0–65 mm，前后边和接口侧边与底板对齐。底板仅预留 Zero 四个 M2.5 固定孔及禁铜区；Zero、铜柱和直插排母的机械模型均已移除。用户可自行安装管理板并用杜邦线连接。
-
-| Mount | X (mm) | Y (mm) |
-| --- | ---: | ---: |
-| Outer lower / MH3 | 129.4001 | 3.6001 |
-| Outer upper / MH4 | 129.4001 | 61.4501 |
-| Inner lower / MH5 | 106.5001 | 3.6001 |
-| Inner upper / MH6 | 106.5501 | 61.4001 |
-
-安装高度根据用户选用的铜柱、散热片、网口净空与杜邦线插头空间确定。当前三维装配显示底板、六块 845 和 7020 风扇。[Mounting Details](../enclosure/assembly/zero-dupont-mount.md)
+Zero 的安装范围、铜柱高度和线束净空见 [Four-Post Dupont Mount](../enclosure/assembly/zero-dupont-mount.md)。
 
 主工程包含 205 个电气组件和 7 个机械组件。已绑定的 3D 模型见 [Model Assets](mci-845-backplane/models/README.md)。
 
-管理接口 J11 采用 **2×10、2.54 mm 直插排针**，放在网口侧的 PCB 顶面。原理图和 PCB 已分配 GND、MDC、MDIO 和六路复位网络。六路复位各通过一颗默认不装的 0 Ω 电阻接至槽位 R05。针位和装配条件见 [Management Header](design/management-header.md)。排针待布线。六路 UART 经 CH348L 走 USB-C。
+J11 的针位、布线状态和装配条件见 [Management Header](design/management-header.md)。
 
 [Native EDA Assembly](../enclosure/assembly/preview/mci-845-eda-assembly-140x65-7020.glb)
 
@@ -63,7 +54,7 @@ Zero 安装孔对应的 PCB 平面范围为 X = 103–133、Y = 0–65 mm，前�
 
 右侧面板从上到下为千兆 RJ45 上联、USB-C `CONSOLE` 和圆筒式 12 V DC 输入。三者的插口均朝向面板，沿板宽方向的中心距为 18 mm。
 
-首版交换芯片采用 RTL8370N-VB-CG（`C2803243`）。P0–P5 对应六块核心板，P6 对应 HR911130A 上联，P7 预留。交换电路包含 25 MHz 晶振、1.1 V 监控复位、启动配置电阻和独立模拟电源滤波。六槽各预留四对差分线的串联焊盘，按实测极性和核心板 PHY 耦合方式决定装配。上联的 P1 是 PHY 侧公共中心抽头，P10 接屏蔽网络。P1 旁路和屏蔽网络到背板地的连接方式按联调确定。 [瑞昱数据手册](https://atta.szlcsc.com/upload/public/pdf/source/20250217/468C3E67021922D5BAC9984AC959B20B.pdf) · [HanRun HR911130A 接线图](https://hrdzen.oss-cn-beijing.aliyuncs.com/202601/1ba07be89265140.pdf) · [PINE64 Clusterboard 原理图](https://files.pine64.org/doc/clusterboard/PINE64%20CLUSTER%20BOARD_2_2_Schematic.pdf)
+首版交换芯片采用 RTL8370N-VB-CG（`C2803243`）。P0–P5 依次对应 Slot 0–5，P6 接 HR911130A 上联，P7 预留。交换电路包含 25 MHz 晶振、1.1 V 监控复位、启动配置电阻和独立模拟电源滤波。六槽差分线的串联器件默认不装，按核心板 PHY 耦合方式确定装配。上联的 P1 是 PHY 侧公共中心抽头，P10 接屏蔽网络。P1 旁路和屏蔽网络到背板地的连接方式按联调确定。 [瑞昱数据手册](https://atta.szlcsc.com/upload/public/pdf/source/20250217/468C3E67021922D5BAC9984AC959B20B.pdf) · [HanRun HR911130A 接线图](https://hrdzen.oss-cn-beijing.aliyuncs.com/202601/1ba07be89265140.pdf) · [PINE64 Clusterboard 原理图](https://files.pine64.org/doc/clusterboard/PINE64%20CLUSTER%20BOARD_2_2_Schematic.pdf)
 
 ## USB Console
 
@@ -79,7 +70,7 @@ Zero 安装孔对应的 PCB 平面范围为 X = 103–133、Y = 0–65 mm，前�
 
 铺铜规划：内层 1 为 GND，内层 2 为 BUS_12V。底面为 DC 入口、主保险后、反接保护后和电子保险输出分别铺铜，六槽支路覆盖保险输出及母座 12 V 触点。叠层初选外层 2 oz、独立连续的地参考层。铜宽、端子焊盘颈部、保险焊盘和换层过孔按最大持续电流、允许压降和温升定尺寸。千兆差分线按选定叠层做 100 Ω 阻抗匹配，确定线宽前核对 2 oz 工艺的最小线宽线距。 [嘉立创制造能力](https://www.jlc.com/portal/vtechnology.html) · [IPC-2152](https://www.ipc.org/TOC/IPC-2152.pdf)
 
-三路降压 U2–U4、L1–L3 及其配套阻容已移至顶面前沿；C1、C23、C24 三颗大电容、主保险 F1 和调试排针 J11 同步换到顶面。C1 是 12 V 母线储能电容，C23/C24 为交换芯片 1.1 V 输出滤波电容。输入保护集中在 DC 口旁。[Top-Side Power Placement](design/power/top-power-placement.md) 记录各器件位置与电容用途。按持续 8 A 估算，主供电路径每增加 10 mΩ 串联电阻就会产生 0.64 W 损耗和 80 mV 压降。样机装入外壳后，在六槽同时满载时测量插头触点、F1、Q1/Q2 和 U1 的压降与温升，同时记录顶面降压区、底面交换芯片及靠出风端核心板的温度。铜柱高度应同时满足底面最高器件净空和风道要求。
+输入保护集中在 DC 口旁。降压器件布局和电容用途见 [Top-Side Power Placement](design/power/top-power-placement.md)。按持续 8 A 估算，主供电路径每增加 10 mΩ 串联电阻就会产生 0.64 W 损耗和 80 mV 压降。样机装到底座后，在六槽同时满载时测量插头触点、F1、Q1/Q2 和 U1 的压降与温升，同时记录顶面降压区、底面交换芯片及靠出风端核心板的温度。
 
 ## Fabrication
 

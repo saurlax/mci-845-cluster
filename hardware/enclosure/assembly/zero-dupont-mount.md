@@ -1,6 +1,6 @@
 # Four-Post Dupont Mount
 
-底板仅保留 Zero 四个固定孔及禁铜区，用户可自行安装管理板并通过杜邦线配置连接。Zero、四根铜柱和直插排母的机械组件及封装均已移除，长条直插通道禁铜区已取消。板框继续为 140 × 65 mm，7020 风扇及六块 845 的位置保持当前布局。
+底板为 Zero 预留四个固定孔及禁铜区，用户可自行安装管理板并通过杜邦线连接。Zero 安装范围为 X = 103–133、Y = 0–65 mm，前后边和接口侧边与底板对齐。板框与槽位布局见 [Cluster Backplane](../../backplane/README.md#board-outline-and-mounting)。
 
 ## Mounting Holes
 
@@ -23,12 +23,10 @@
 
 ## Assembly Height and Wiring
 
-当前预览仅显示底板、六块 845 和 7020 风扇。铜柱高度可按散热片和线束选择；四个固定点用于用户安装管理板。最终高度同时计入散热片、RJ45、杜邦插头外壳和出线弯曲空间。
+铜柱高度按散热片、RJ45、杜邦插头外壳和出线弯曲空间确定。托盘支撑高度同时满足底面器件净空和风道要求。
 
-现有 847 条焊盘网络映射保持原样。Zero 与底板的 UART、RESET、电源针位和电平在电气设计中定义，当前保留四孔固定与用户自行接线的方案。
+管理线束接法见 [Management Header](../../backplane/design/management-header.md)，串口接法见 [USB Console](../../backplane/README.md#usb-console)。
 
 ## Native EDA Preview
 
 [Main EDA Project](../../backplane/mci-845-backplane/mci-845-backplane.eprj3) · [3D Assembly](preview/mci-845-eda-assembly-140x65-7020.glb) · [Interface View](preview/eda-zero3w-interface-closeup.png)
-
-当前主工程包含 206 个组件：199 个电气组件、六块 845 和一个 7020 风扇。

@@ -1,6 +1,6 @@
 # Radxa ZERO 3W Mechanical Reference
 
-Radxa 官方 ZERO 3W V1.11 STEP 模型，包含 PCB、接口、元件和朝元件面伸出的 40 pin 排针。
+以下尺寸来自 Radxa 官方 ZERO 3W V1.11 STEP。模型按需从 Radxa 下载，本目录仅跟踪这份参考说明。
 
 ## Source
 

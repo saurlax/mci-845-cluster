@@ -8,4 +8,5 @@ debug.log
 
 # Vendor CAD downloads
 /hardware/reference-models/delta-7020/delta-afc0712dd-tp10.step
-/hardware/reference-models/radxa-zero-3w/radxa-zero-3w-v1.11.step
+/hardware/reference-models/radxa-zero-3w/*
+!/hardware/reference-models/radxa-zero-3w/README.md

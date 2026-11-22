@@ -1445,7 +1445,7 @@
     }
   ],
   "local_models": {
-    "mci-845-coreboard-vertical.step": "b15d0535838fd6e55eb383fd93deb323250ce8665b25902f9831dc73de751e7c",
+    "../../../845-coreboard/eda-models/mci-845-coreboard-vertical.step": "b15d0535838fd6e55eb383fd93deb323250ce8665b25902f9831dc73de751e7c",
     "mci-845-delta-7020.step": "72e92e7b26ba7290ddffb57ae857bcd65184f6f1f13f5691c6fabd1fbd8764ab",
     "mci-845-header-2p-reference.step": "628db8dc22c3f0fa574a6a90480b3e2dc7799fe48295531a15847dbfdb88b3c6",
     "mci-845-header-3p-reference.step": "9b78dc2be6642606ef1d9e3aad5b4d2bcf4fd5e3f84b75d3fa7fc222776ffe3d",

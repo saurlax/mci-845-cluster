@@ -6,6 +6,11 @@
 - Use English by default for repository metadata, document titles and headings, table headers, issue and pull request titles, release titles, branch names, filenames, code, and code comments.
 - Write the body prose of project documentation in Simplified Chinese. Use English for `AGENTS.md` and other repository instruction files.
 
+## Documentation Ownership
+
+- Keep one authoritative document for each technical definition under the directory that owns it. Link to that definition from related documents.
+- Keep the 845 core board connector pinout, differential pair mapping, reference evidence, and verification notes in `hardware/845-coreboard/README.md`.
+
 ## Commits
 
 Follow [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/). Write the subject, optional body, and any prose in footers in English. Use `type(scope): summary` with an optional scope. Write a short, imperative summary, such as `docs: add repository guidelines` or `fix(controller): correct slot numbering`. Mark breaking changes with `!` in the prefix or a `BREAKING CHANGE:` footer.

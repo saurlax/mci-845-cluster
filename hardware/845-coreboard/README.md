@@ -1,6 +1,72 @@
 # MCI 845 Core Board
 
-核心板装配模型用于外壳布置、接口开窗和 3D 展示。模型保留弹簧扣、散热片鳍片、22 触点连接器和 USB-C 接口，背面的元件和丝印按照片简化。
+核心板装配模型用于底板布置、装配净空检查和 3D 展示。模型保留弹簧扣、散热片鳍片、22 触点连接器和 USB-C 接口，背面的元件和丝印按照片简化。
+
+## Core Board Connector
+
+MCI 845 核心板使用 **SATA 外形的 22 触点连接器**，通过配套转接板引出电源和千兆以太网。它采用核心板自定义针脚分配，**不能按标准 SATA 接线**。
+
+### Contact Numbering
+
+正对核心板金手指，让 MCI 标识正立、连接器朝上。从最左端开始数，长段依次为 **L01–L15**。越过缺口，短段从 **R01** 重新起算，最右端是 **R07**。
+
+### Pin Mapping
+
+两张表都从左向右读。Pin# 是核心板金手指编号，Pad 是背板母座的焊盘号，Function 是当前背板设计分配的信号。[TE 1735284-5 母座](https://www.te.com/en/product/1735284-5.html)
+
+#### Long Group
+
+| Pin# | L01 | L02 | L03 | L04 | L05 | L06 | L07 | L08 | L09 | L10 | L11 | L12 | L13 | L14 | L15 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Pad | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 |
+| Function | GND | MDI0+ | MDI0− | GND | MDI1+ | MDI1− | GND | MDI2+ | MDI2− | GND | MDI3+ | MDI3− | GND | GND | GND |
+
+#### Short Group
+
+| Pin# | R01 | R02 | R03 | R04 | R05 | R06 | R07 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Pad | 7 | 6 | 5 | 4 | 3 | 2 | 1 |
+| Function | 12V | 12V | 12V | 12V | RESET | UART TX | UART RX |
+
+长段的 MDI0 至 MDI3 是四对千兆以太网差分线，+ 和 − 表示各对的正端和负端。GND 为地。
+
+短段 VIN 按 12 V 输入设计。UART TX、RX 分别指核心板发送和接收。底板的串口和复位接法见 [USB Console](../backplane/README.md#usb-console) 和 [Management Header](../backplane/design/management-header.md)。
+
+### Reference Evidence
+
+本地照片位于 `references/mci-845/sata-interface/`。`05-k001-v2-3-contacts.jpg` 给出触点编号的观察方向，`01-coreboard-and-12v-adapter.jpg` 显示转接板的 `DC12V` 丝印，`02-h845d-adapter-top.jpg` 和 `06-feng-adapter-render-top.jpg` 可见长段到 RJ45 一侧的走线。
+
+长段线序、差分极性和接地触点依据此前记录的 15 针标注特写，特写中的网卡丝印为 RTL8153。照片 03 和 05 分别显示 `MCI_K001_V2_1` 和 `MCI_K001_V2_3`。首件按实际版本核对插合与导通、电源触点和输入电压范围、PHY 耦合、UART 方向和空闲电平，以及复位触发电平。
+
+器件资料见 [AX88179 数据手册](https://downloads.codico.com/misc/ROHS%202011%2065%20EU%20ab%201.1.2013/Asix/AX88179_Datasheet_v122.pdf) · [Amphenol 22 触点连接器图纸](https://www.amphenol-cs.com/product/sata00102253a.html)。
+
+### Continuity Mapping
+
+1. 拔下电源和网线，核心板与转接板分离。用转接板母座的可接触焊脚测量。先记录 DC 插座正极、负极及输入保护器件两端各连到哪些触点。用电阻值区分直接连接和经过器件的路径。
+2. 读出 RJ45 型号，用该型号的图纸确认板侧引脚、变压器中心抽头、LED 和屏蔽脚。逐一追踪板侧焊脚到 22 触点，必要时再从核心板实际搭载的以太网芯片或其邻近器件交叉验证。变压器同一绕组的两端都可能触发蜂鸣，需用走线或直接到器件焊盘的测量分辨极性。
+3. 用原配转接板单独供电，在固定测点验证电源触点电压。剩余触点记录测过的端点、电阻和上电状态。仅凭蜂鸣表没有响，无法确定触点空接。确认电源和地之前，禁止从自制背板向核心板上电。
+
+### Measurement Record
+
+每块板填一张。测试记录包含核心板版本、转接板版本和 RJ45 型号。将 `—` 替换为确认到的网络与测点，电源触点同时记录电压。
+
+| Long Contact | Net / Test Point | Short Contact | Net / Test Point |
+| --- | --- | --- | --- |
+| L01 | — | R01 | — |
+| L02 | — | R02 | — |
+| L03 | — | R03 | — |
+| L04 | — | R04 | — |
+| L05 | — | R05 | — |
+| L06 | — | R06 | — |
+| L07 | — | R07 | — |
+| L08 | — | | |
+| L09 | — | | |
+| L10 | — | | |
+| L11 | — | | |
+| L12 | — | | |
+| L13 | — | | |
+| L14 | — | | |
+| L15 | — | | |
 
 ## JLCEDA Pro Library
 

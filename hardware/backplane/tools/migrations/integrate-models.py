@@ -5,6 +5,7 @@ from copy import deepcopy
 import csv
 import hashlib
 import json
+from os.path import relpath
 from pathlib import Path
 import shutil
 import time
@@ -16,6 +17,7 @@ import cadquery as cq
 ROOT = Path(__file__).resolve().parents[4]
 MAIN = ROOT / "hardware/backplane/mci-845-backplane"
 MODELS = MAIN / "models"
+COREBOARD_MODEL = ROOT / "hardware/845-coreboard/eda-models/mci-845-coreboard-vertical.step"
 LIBRARY = Path.home() / "Documents/LCEDA-Pro/libraries"
 SYSTEM_LIBRARY = "0819f05c4eef4c71ace90d822a990e87"
 
@@ -105,10 +107,7 @@ def models():
         pins = [box(.64, .64, 11.5, (i - (count - 1) / 2) * pitch, 0, -3) for i in range(count)]
         assembly.add(cq.Compound.makeCompound(pins), name="Pins", color=cq.Color(.78, .65, .32))
         result[f"hdr{count}"] = export_model(f"header-{count}p-reference", assembly)
-    # Bundle the existing core-board model with the project as well.
-    source = ROOT / "hardware/845-coreboard/eda-models/mci-845-coreboard-vertical.step"
-    shutil.copy2(source, MODELS / source.name)
-    shutil.copy2(source, LIBRARY / source.name)
+    shutil.copy2(COREBOARD_MODEL, LIBRARY / COREBOARD_MODEL.name)
     print("Prepared 7020, socket, standoffs and utility headers", flush=True)
     return result
 
@@ -263,8 +262,10 @@ def main(trial):
     main_data["name"] = "MCI 845 Cluster"
     main_data["content"] = "140x65 backplane; inverted ZERO 3W; Delta 7020; complete component model bindings"
     main_index.write_text(json.dumps(main_data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    model_paths = [*MODELS.glob("*.step"), COREBOARD_MODEL]
     report = {"component_count": len(log)+6, "bindings": log,
-              "local_models": {p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in MODELS.glob("*.step")},
+              "local_models": {Path(relpath(p, MODELS)).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+                               for p in model_paths},
               "main_project":main_index.relative_to(ROOT).as_posix(),
               "scope":"3D package and assembly integration; electrical nets preserved; routing remains in progress"}
     (MODELS/"model-bindings.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
