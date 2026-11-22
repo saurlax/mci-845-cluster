@@ -1,5 +1,6 @@
 """Bind all package models and promote the confirmed assembly to the main EDA project."""
 
+import argparse
 from copy import deepcopy
 import csv
 import hashlib
@@ -14,7 +15,6 @@ import cadquery as cq
 
 ROOT = Path(__file__).resolve().parents[4]
 MAIN = ROOT / "hardware/backplane/mci-845-backplane"
-TRIAL = ROOT / "hardware/backplane/variants/140x65"
 MODELS = MAIN / "models"
 LIBRARY = Path.home() / "Documents/LCEDA-Pro/libraries"
 SYSTEM_LIBRARY = "0819f05c4eef4c71ace90d822a990e87"
@@ -118,15 +118,18 @@ def bind_cloud(model_uuid, name, x_mm, y_mm, rotation=0):
             "3D Model Transform": f"{x_mm/.0254:.6f},{y_mm/.0254:.6f},0,{rotation},0,0,0,0,0"}
 
 
-def main():
+def main(trial):
+    if trial.resolve() == MAIN.resolve():
+        raise ValueError("The trial project must be separate from the main project")
+    trial_index = next(trial.glob("*.eprj3"))
+    path = trial / "pcb/Backplane.epcb2"
+    groups = groups_of(read_records(path))
     backup = ROOT / "references/eda-before-full-models"
     if backup.exists():
         raise FileExistsError("Integration backup already exists; inspect before rerunning")
     shutil.copytree(MAIN, backup / "main", ignore=shutil.ignore_patterns("debug.log"))
-    shutil.copytree(TRIAL, backup / "trial", ignore=shutil.ignore_patterns("debug.log"))
+    shutil.copytree(trial, backup / "trial", ignore=shutil.ignore_patterns("debug.log"))
     local = models()
-    path = TRIAL / "pcb/Backplane.epcb2"
-    groups = groups_of(read_records(path))
     board = groups[-1]
     refs = {v["parentId"]: v["value"] for h, v in board
             if h["type"] == "ATTR" and v and v.get("key") == "Designator"}
@@ -239,7 +242,6 @@ def main():
     records = [record for group in groups for record in group]
     for i, (h, v) in enumerate(records): h["ticket"] = i + 1
     write_records(path, records)
-    trial_index = next(TRIAL.glob("*.eprj3"))
     trial_data = json.loads(trial_index.read_text(encoding="utf-8"))
     for item in trial_data["profile"]["pcbs"].values(): item.update(version=str(revision), updateTime=revision)
     trial_index.write_text(json.dumps(trial_data, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
@@ -273,4 +275,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("trial", type=Path, help="Path to the pre-migration trial project folder")
+    main(parser.parse_args().trial)

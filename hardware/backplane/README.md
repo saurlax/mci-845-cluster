@@ -2,11 +2,21 @@
 
 在此目录存放完整的嘉立创 EDA 专业版 v4 文件夹工程。提交时保留工程索引（`.eprj3`）、原理图（`.esch2`）、PCB 布局（`.epcb2`）和工程引用的本地库文件。
 
-[主工程](mci-845-backplane/) · [140 × 65 mm 同步工程](variants/140x65/) · [管理排针](design/management-header.md) · [顶面供电布局](design/power/top-power-placement.md) · [迁移脚本](tools/migrations/README.md)
+[主工程](mci-845-backplane/) · [管理排针](design/management-header.md) · [顶面供电布局](design/power/top-power-placement.md) · [迁移脚本](tools/migrations/README.md)
 
 ## Electrical Design
 
 在桌面客户端打开 [MCI 845 Backplane](mci-845-backplane/mci-845-backplane.eprj3)。`J1` 至 `J6` 分别对应 Slot 0 至 Slot 5，`J1` 为管理节点。每槽按[核心板触点定义](../../docs/coreboard-connector.md#preview-mapping)接入接地、四对以太网、12 V 和两根 UART 信号。复位触点 R05 通过默认不装的 0 Ω 电阻接到管理排针。母座焊盘映射、12 V 输入范围、串口电平及差分耦合方式按实物核对。
+
+主工程采用以下五张原理图。
+
+| Sheet | Contents |
+| --- | --- |
+| [Core Board Slots](mci-845-backplane/sch/Backplane/Core%20Board%20Slots.esch2) | 六个核心板母座及触点定义 |
+| [Power](mci-845-backplane/sch/Backplane/Power.esch2) | 12 V 输入保护、电子保险、槽位与风扇支路、交换芯片稳压和去耦 |
+| [Ethernet Switch and Uplink](mci-845-backplane/sch/Backplane/Ethernet%20Switch%20and%20Uplink.esch2) | 交换芯片、时钟、复位、启动配置、管理排针和 RJ45 上联 |
+| [Slot Ethernet](mci-845-backplane/sch/Backplane/Slot%20Ethernet.esch2) | 六槽千兆差分对及串联焊盘 |
+| [UART Console](mci-845-backplane/sch/Backplane/UART%20Console.esch2) | USB-C、CH348L、六路 UART 及槽位复位隔离 |
 
 六块核心板按两列三行排列，从背板上方垂直插入。核心板侧是 22 触点公头，背板侧是顶插母座。左列从上到下为 Slot 0、1、2，右列为 Slot 3、4、5。7020 风扇在左侧，外部接口集中在右侧。
 
@@ -47,7 +57,7 @@ Zero 安装孔对应的 PCB 平面范围为 X = 103–133、Y = 0–65 mm，前�
 
 管理接口 J11 采用 **2×10、2.54 mm 直插排针**，放在网口侧的 PCB 顶面。原理图和 PCB 已分配 GND、MDC、MDIO 和六路复位网络。六路复位各通过一颗默认不装的 0 Ω 电阻接至槽位 R05。针位和装配条件见 [Management Header](design/management-header.md)。排针待布线。六路 UART 经 CH348L 走 USB-C。
 
-[140 × 65 mm 同步试排工程](variants/140x65/mci-845-backplane-140x65.eprj3) · [Native EDA Assembly](../enclosure/assembly/preview/mci-845-eda-assembly-140x65-7020.glb)
+[Native EDA Assembly](../enclosure/assembly/preview/mci-845-eda-assembly-140x65-7020.glb)
 
 ## Panel and Ethernet
 
@@ -57,13 +67,13 @@ Zero 安装孔对应的 PCB 平面范围为 X = 103–133、Y = 0–65 mm，前�
 
 ## USB Console
 
-[USB Console](mci-845-backplane/sch/Backplane/USB%20Console.esch2) 使用 USB-C 设备端接法和 USB 数据线 ESD 保护。CH348L（`C2979160`）由 USB VBUS 经独立 LDO 供电，I/O 电源可选 1.8 V 或 3.3 V，原理图默认 1.8 V。六路 TX/RX 已按候选针位经过一组默认不装的 0 Ω 电阻接到母座，根据实测方向和电平决定装配。 [沁恒 CH348 数据手册](https://atta.szlcsc.com/upload/public/pdf/source/20240313/A2EF5AA685A1AE72CD026213AA917E03.pdf)
+[UART Console](mci-845-backplane/sch/Backplane/UART%20Console.esch2) 使用 USB-C 设备端接法和 USB 数据线 ESD 保护。CH348L（`C2979160`）由 USB VBUS 经独立 LDO 供电，I/O 电源可选 1.8 V 或 3.3 V，原理图默认 1.8 V。六路 TX/RX 已按候选针位经过一组默认不装的 0 Ω 电阻接到母座，根据实测方向和电平决定装配。 [沁恒 CH348 数据手册](https://atta.szlcsc.com/upload/public/pdf/source/20240313/A2EF5AA685A1AE72CD026213AA917E03.pdf)
 
 ## DC Power
 
 采用外置稳压 12 V DC 电源，首版以额定 10 A（120 W）作为预算。满载预算暂取 8 A，其中六块板合计 7.2 A，风扇、交换芯片及其他背板电路合计 0.8 A。这是供电预算，定型前用原配转接板测单板启动峰值和持续满载电流，再复测六槽同时开机。
 
-[Power Distribution](mci-845-backplane/sch/Backplane/Power%20Distribution.esch2) 使用主保险、TVS 和并联 P 沟道 MOSFET 处理输入保护，由 TPS259824O 控制上电斜率和过电流关断。六个槽位各有独立保险，12 V 风扇单独供电。三级 TPS54302 分别生成 5 V、3.3 V 和 1.1 V。元件初值按 10 A 输入设计目标选取，主保险、各支路保险、输入斜率、稳压环路和温升按实测定型。 [TPS25982 数据手册](https://www.ti.com/lit/ds/symlink/tps25982.pdf) · [TPS54302 数据手册](https://www.ti.com/lit/ds/symlink/tps54302.pdf)
+[Power](mci-845-backplane/sch/Backplane/Power.esch2) 使用主保险、TVS 和并联 P 沟道 MOSFET 处理输入保护，由 TPS259824O 控制上电斜率和过电流关断。六个槽位各有独立保险，12 V 风扇单独供电。三级 TPS54302 分别生成 5 V、3.3 V 和 1.1 V。元件初值按 10 A 输入设计目标选取，主保险、各支路保险、输入斜率、稳压环路和温升按实测定型。 [TPS25982 数据手册](https://www.ti.com/lit/ds/symlink/tps25982.pdf) · [TPS54302 数据手册](https://www.ti.com/lit/ds/symlink/tps54302.pdf)
 
 首版采用圆筒式 12 V DC 电源入口（J7）。按 10 A 设计目标校核插座、配套插头和线束在机内温度下的载流能力。圆筒方案以额定 11 A 的 Switchcraft RAPC10 插座及 S10K 插头为参考。实际封装和面板开孔按所选电源插头及其配套插座确定。 [插座规格](https://www.switchcraft.com/high-amperage-power-jack-silver-terminal-plating-through-hole-termination/rapc10/) · [配套图纸](https://www.switchcraft.com/assets/1/24/S10_SERIES_CD.PDF?6397=)
 

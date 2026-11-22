@@ -8,7 +8,7 @@ import time
 import uuid
 
 ROOT = Path(__file__).resolve().parents[4]
-PROJECTS = [ROOT/'hardware/backplane/mci-845-backplane', ROOT/'hardware/backplane/variants/140x65']
+PROJECTS = [ROOT/'hardware/backplane/mci-845-backplane']
 INNER_HOLES = [('MH5','MECH11',106.5001,3.6001),('MH6','MECH12',106.5501,61.4001)]
 
 def uid(): return uuid.uuid4().hex[:16]
