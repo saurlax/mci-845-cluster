@@ -1,5 +1,5 @@
 {
-  "component_count": 212,
+  "component_count": 155,
   "bindings": [
     {
       "designator": "J9",
@@ -157,17 +157,17 @@
     },
     {
       "designator": "U9",
-      "model": "SOT-23-6_L2.9-W1.6-H1.5-LS2.8-P0.95",
-      "binding": "18da8f6c14a34920b3e136b5c401a119|0819f05c4eef4c71ace90d822a990e87",
+      "model": "",
+      "binding": "",
       "placement": "bottom",
-      "status": "fitted"
+      "status": "fitted, model pending"
     },
     {
       "designator": "J11",
       "model": "",
       "binding": "",
       "placement": "top",
-      "status": "pending 2x10 model"
+      "status": "pending 2x5 model"
     },
     {
       "designator": "U6",
@@ -191,11 +191,11 @@
       "status": "fitted"
     },
     {
-      "designator": "U7",
-      "model": "SOT-23-5_L2.9-W1.6-LS2.8-P0.95",
-      "binding": "25b054d4db3343b88aee285a0a719589|0819f05c4eef4c71ace90d822a990e87",
+      "designator": "U11",
+      "model": "",
+      "binding": "",
       "placement": "bottom",
-      "status": "fitted"
+      "status": "fitted, model pending"
     },
     {
       "designator": "U8",
@@ -205,95 +205,11 @@
       "status": "fitted"
     },
     {
-      "designator": "R25",
-      "model": "R0603",
-      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "R26",
-      "model": "R0603",
-      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "R27",
-      "model": "R0603",
-      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "R28",
-      "model": "R0603",
-      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "R29",
-      "model": "R0603",
-      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "R30",
-      "model": "R0603",
-      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "R31",
-      "model": "R0603",
-      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "R32",
-      "model": "R0603",
-      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "R33",
-      "model": "R0603",
-      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "R34",
-      "model": "R0603",
-      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "R35",
-      "model": "R0603",
-      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "R36",
-      "model": "R0603",
-      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
       "designator": "C61",
       "model": "C0603_L1.6-W0.8-H0.8",
       "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
       "placement": "bottom",
-      "status": "DNP"
+      "status": "fitted"
     },
     {
       "designator": "C62",
@@ -307,7 +223,7 @@
       "model": "R0603",
       "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
       "placement": "bottom",
-      "status": "DNP"
+      "status": "fitted"
     },
     {
       "designator": "R2",
@@ -420,342 +336,6 @@
       "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
       "placement": "bottom",
       "status": "fitted"
-    },
-    {
-      "designator": "C63",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C64",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C65",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C66",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C67",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C68",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C69",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C70",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C71",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C72",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C73",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C74",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C75",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C76",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C77",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C78",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C79",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C80",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C81",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C82",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C83",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C84",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C85",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C86",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C87",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C88",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C89",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C90",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C91",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C92",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C93",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C94",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C95",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C96",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C97",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C98",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C99",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C100",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C101",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C102",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C103",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C104",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C105",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C106",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C107",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C108",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C109",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C110",
-      "model": "C0603_L1.6-W0.8-H0.8",
-      "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
     },
     {
       "designator": "C31",
@@ -1283,13 +863,6 @@
       "status": "fitted"
     },
     {
-      "designator": "R24",
-      "model": "R0603",
-      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "fitted"
-    },
-    {
       "designator": "C117",
       "model": "C0603_L1.6-W0.8-H0.8",
       "binding": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
@@ -1374,23 +947,16 @@
       "status": "fitted"
     },
     {
-      "designator": "R22",
+      "designator": "R47",
       "model": "R0603",
       "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
       "placement": "bottom",
       "status": "fitted"
     },
     {
-      "designator": "R23",
+      "designator": "R48",
       "model": "R0603",
       "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
-      "placement": "bottom",
-      "status": "DNP"
-    },
-    {
-      "designator": "C114",
-      "model": "C0805_L2.0-W1.3-H1.3",
-      "binding": "1ba041120af144c991958decab20d241|0819f05c4eef4c71ace90d822a990e87",
       "placement": "bottom",
       "status": "fitted"
     },
@@ -1442,17 +1008,95 @@
       "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
       "placement": "top",
       "status": "DNP"
+    },
+    {
+      "designator": "MECH9",
+      "model": "printed-base-assembly",
+      "binding": "printed-base-assembly.step|C:\\Users\\saurl\\Documents\\LCEDA-Pro\\libraries",
+      "placement": "top",
+      "status": "mechanical"
+    },
+    {
+      "designator": "MECH1",
+      "model": "mci-845-coreboard-vertical",
+      "binding": "mci-845-coreboard-vertical.step|C:\\Users\\saurl\\Documents\\LCEDA-Pro\\libraries",
+      "placement": "top",
+      "status": "mechanical"
+    },
+    {
+      "designator": "MECH2",
+      "model": "mci-845-coreboard-vertical",
+      "binding": "mci-845-coreboard-vertical.step|C:\\Users\\saurl\\Documents\\LCEDA-Pro\\libraries",
+      "placement": "top",
+      "status": "mechanical"
+    },
+    {
+      "designator": "MECH3",
+      "model": "mci-845-coreboard-vertical",
+      "binding": "mci-845-coreboard-vertical.step|C:\\Users\\saurl\\Documents\\LCEDA-Pro\\libraries",
+      "placement": "top",
+      "status": "mechanical"
+    },
+    {
+      "designator": "MECH4",
+      "model": "mci-845-coreboard-vertical",
+      "binding": "mci-845-coreboard-vertical.step|C:\\Users\\saurl\\Documents\\LCEDA-Pro\\libraries",
+      "placement": "top",
+      "status": "mechanical"
+    },
+    {
+      "designator": "MECH5",
+      "model": "mci-845-coreboard-vertical",
+      "binding": "mci-845-coreboard-vertical.step|C:\\Users\\saurl\\Documents\\LCEDA-Pro\\libraries",
+      "placement": "top",
+      "status": "mechanical"
+    },
+    {
+      "designator": "MECH6",
+      "model": "mci-845-coreboard-vertical",
+      "binding": "mci-845-coreboard-vertical.step|C:\\Users\\saurl\\Documents\\LCEDA-Pro\\libraries",
+      "placement": "top",
+      "status": "mechanical"
+    },
+    {
+      "designator": "R43",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R44",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R45",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
+    },
+    {
+      "designator": "R46",
+      "model": "R0603",
+      "binding": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+      "placement": "bottom",
+      "status": "fitted"
     }
   ],
   "local_models": {
-    "../../../845-coreboard/eda-models/mci-845-coreboard-vertical.step": "b15d0535838fd6e55eb383fd93deb323250ce8665b25902f9831dc73de751e7c",
+    "../845-coreboard/eda-models/mci-845-coreboard-vertical.step": "b15d0535838fd6e55eb383fd93deb323250ce8665b25902f9831dc73de751e7c",
     "mci-845-delta-7020.step": "72e92e7b26ba7290ddffb57ae857bcd65184f6f1f13f5691c6fabd1fbd8764ab",
     "mci-845-header-2p-reference.step": "628db8dc22c3f0fa574a6a90480b3e2dc7799fe48295531a15847dbfdb88b3c6",
     "mci-845-header-3p-reference.step": "9b78dc2be6642606ef1d9e3aad5b4d2bcf4fd5e3f84b75d3fa7fc222776ffe3d",
     "mci-845-socket-2x20-h17p5-reference.step": "051a9114315a415561fbbfed1e4777d7d242fc0c2c3c4f8e31e2140e2040d425",
-    "mci-845-standoff-m2p5-h20.step": "f98831d808656c3006066472b83bd5e5f1e01251f89b76999ed9681d1570f119"
+    "mci-845-standoff-m2p5-h20.step": "f98831d808656c3006066472b83bd5e5f1e01251f89b76999ed9681d1570f119",
+    "../enclosure/printed-base/cad/printed-base-assembly.step": "739363cb2cf19d9f4e27e7eae078ef1b34b05d8aeb01d9d7a688673a48a5db40"
   },
-  "main_project": "hardware/backplane/mci-845-backplane/mci-845-backplane.eprj3",
+  "main_project": "hardware/mci-845-cluster.eprj3",
   "scope": "3D package and assembly integration; electrical nets preserved; routing remains in progress",
   "mounting": {
     "connection": "User-configurable Dupont leads; no directly mating baseboard 40-pin socket",
@@ -1889,7 +1533,7 @@
   },
   "management_header": {
     "designator": "J11",
-    "footprint": "2x10 2.54 mm through-hole",
+    "footprint": "2x5 2.54 mm through-hole",
     "model_status": "pending"
   },
   "slot_reset_links": {

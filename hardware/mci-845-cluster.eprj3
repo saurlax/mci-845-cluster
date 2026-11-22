@@ -31,19 +31,37 @@
         "name": "Backplane",
         "board": "",
         "source": "",
-        "version": "1795072869730",
-        "updateTime": 1795072869730
+        "version": "1795359536986",
+        "updateTime": 1795359536986
       }
     },
     "sheets": {
+      "b1736c639ad85163": {
+        "uuid": "b1736c639ad85163",
+        "title": "Console",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 4,
+        "source": "",
+        "version": "1795360082308",
+        "updateTime": 1795360082308
+      },
       "4c84909806754025": {
         "uuid": "4c84909806754025",
-        "title": "Core Board Slots",
+        "title": "Coreboard",
         "schematic_uuid": "f815217d289f468b",
         "zIndex": 1,
         "source": "",
-        "version": "1795331887383",
-        "updateTime": 1795331887383
+        "version": "1795360081959",
+        "updateTime": 1795360081959
+      },
+      "2fbdf977a60ba763": {
+        "uuid": "2fbdf977a60ba763",
+        "title": "Ethernet",
+        "schematic_uuid": "f815217d289f468b",
+        "zIndex": 3,
+        "source": "",
+        "version": "1795360082113",
+        "updateTime": 1795360082113
       },
       "c4293bd3c6de59fa": {
         "uuid": "c4293bd3c6de59fa",
@@ -51,35 +69,8 @@
         "schematic_uuid": "f815217d289f468b",
         "zIndex": 2,
         "source": "",
-        "version": "1795331887383",
-        "updateTime": 1795331887383
-      },
-      "2fbdf977a60ba763": {
-        "uuid": "2fbdf977a60ba763",
-        "title": "Ethernet Switch and Uplink",
-        "schematic_uuid": "f815217d289f468b",
-        "zIndex": 3,
-        "source": "",
-        "version": "1795331887383",
-        "updateTime": 1795331887383
-      },
-      "47417bb684bb9708": {
-        "uuid": "47417bb684bb9708",
-        "title": "Slot Ethernet",
-        "schematic_uuid": "f815217d289f468b",
-        "zIndex": 4,
-        "source": "",
-        "version": "1795331887383",
-        "updateTime": 1795331887383
-      },
-      "b1736c639ad85163": {
-        "uuid": "b1736c639ad85163",
-        "title": "UART Console",
-        "schematic_uuid": "f815217d289f468b",
-        "zIndex": 5,
-        "source": "",
-        "version": "1795331887383",
-        "updateTime": 1795331887383
+        "version": "1795359885852",
+        "updateTime": 1795359885852
       }
     },
     "pcbs": {
@@ -89,8 +80,8 @@
         "board": "61ee3a7e923e4bc7",
         "parent_uuid": "",
         "source": "",
-        "version": "1795235815499",
-        "updateTime": 1795235815499
+        "version": "1795359318226",
+        "updateTime": 1795359318226
       }
     },
     "panels": {},

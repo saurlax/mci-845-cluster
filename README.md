@@ -6,7 +6,7 @@
 
 | Directory | Contents |
 | --- | --- |
-| [hardware/backplane](hardware/backplane/) | 集群底板的原理图、PCB 布局和嘉立创 EDA 工程 |
+| [hardware](hardware/) | 集群底板的原理图、PCB 布局和嘉立创 EDA 工程 |
 | [hardware/845-coreboard](hardware/845-coreboard/) | [核心板接口定义](hardware/845-coreboard/README.md#core-board-connector)、机械模型和 EDA 库 |
 | [hardware/enclosure](hardware/enclosure/) | 开放式打印底座、风扇面板和装配 |
 | [hardware/reference-models](hardware/reference-models/) | 供应商 STEP 下载说明和校验值 |

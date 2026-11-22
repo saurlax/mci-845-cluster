@@ -28,6 +28,6 @@
 
 坐标和检查结果见 [Placement Data](top-power-placement.json) 与 [Mechanical Check](top-power-mechanical-check.json)。
 
-[Native EDA Assembly](../../../enclosure/assembly/preview/mci-845-eda-assembly-140x65-7020.glb) · [Bottom View](../../../enclosure/assembly/preview/eda-backplane-bottom.png)
+[Native EDA Assembly](../../enclosure/assembly/preview/mci-845-eda-assembly-140x65-7020.glb) · [Bottom View](../../enclosure/assembly/preview/eda-backplane-bottom.png)
 
-![Assembly](../../../enclosure/assembly/preview/eda-backplane.png)
+![Assembly](../../enclosure/assembly/preview/eda-backplane.png)
