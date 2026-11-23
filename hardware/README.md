@@ -8,14 +8,13 @@
 
 在桌面客户端打开 [MCI 845 Cluster](mci-845-cluster.eprj3)。槽位编号与角色见 [System Architecture](../docs/architecture.md)，各槽母座的针脚和差分线序见 [Core Board Connector](845-coreboard/README.md#pin-mapping)。
 
-主工程采用以下四张原理图。
+主工程采用以下三张原理图。
 
 | Sheet | Contents |
 | --- | --- |
-| [Coreboard](sch/Backplane/Coreboard.esch2) | 六个核心板母座及触点定义 |
+| [Coreboard](sch/Backplane/Coreboard.esch2) | 六个核心板母座及触点定义，J11 双排 24 针管理接口（六路 UART、复位和供电） |
 | [Power](sch/Backplane/Power.esch2) | 12 V 输入保护、电子保险、槽位与风扇支路、交换芯片稳压和去耦 |
-| [Ethernet](sch/Backplane/Ethernet.esch2) | 交换芯片、时钟、复位、启动配置、复位与供电排针和 RJ45 上联 |
-| [Console](sch/Backplane/Console.esch2) | USB-C、CH348L、六路 UART |
+| [Ethernet](sch/Backplane/Ethernet.esch2) | 交换芯片、时钟、复位、启动配置和 RJ45 上联 |
 
 六块核心板按两列三行排列，从背板上方垂直插入。核心板侧是 22 触点公头，背板侧是顶插母座。左列从上到下为 Slot 0、1、2，右列为 Slot 3、4、5。7020 风扇在左侧，外部接口集中在右侧。
 
@@ -43,7 +42,7 @@
 
 Zero 的安装范围、铜柱高度和线束净空见 [Four-Post Dupont Mount](enclosure/assembly/zero-dupont-mount.md)。
 
-主工程包含 139 个电气组件和 8 个机械组件。外壳装配件 MECH9 包含托盘和可拆风扇面板。已绑定的 3D 模型见 [Model Assets](models/README.md)。
+现有 PCB 布局包含 139 个电气组件和 8 个机械组件。外壳装配件 MECH9 包含托盘和可拆风扇面板。已绑定的 3D 模型见 [Model Assets](models/README.md)。
 
 J11 的针位、布线状态和装配条件见 [Reset and Power Header](design/management-header.md)。
 
@@ -51,7 +50,7 @@ J11 的针位、布线状态和装配条件见 [Reset and Power Header](design/m
 
 ## Panel and Ethernet
 
-右侧面板从上到下为千兆 RJ45 上联、USB-C `CONSOLE` 和圆筒式 12 V DC 输入。三者的插口均朝向面板，沿板宽方向的中心距为 18 mm。
+右侧面板提供千兆 RJ45 上联和圆筒式 12 V DC 输入。六槽串口从板内 J11 引出。
 
 RTL8370N-VB-CG 的 P0–P5 分别直连 SLOT 0–5，每槽四对 MDI 差分线。P6 接内置网络变压器的 HR911130A 上联口，P7 预留。六槽差分对待按叠层重新布线，首件逐槽验证千兆协商和双向传输。
 
@@ -59,15 +58,13 @@ J9 的绿灯和黄灯分别通过 R43、R44（各 470 Ω）接 3.3 V，由 U5 �
 
 U9（LTC2909ITS8-3.3）监测 L4、L5 后的 3.3 V 和 1.1 V 模拟电源，两路均越过门限后至少再等 150 ms 释放复位。两路标称门限分别为 3.21 V 和 1.065 V。U3、U4 的反馈分压采用 0.1% 电阻，标称输出分别为 3.361 V 和 1.118 V。首件在磁珠后测满载最低电压、纹波和复位释放时刻。L4、L5 采用 BLM21PG121SN1D。Y1 采用 25 MHz、18 pF 负载的 ABM3-25.000MHZ-D2Y-T，C25、C26 各 27 pF，板上寄生电容计入实际负载。[LTC2909 数据手册](https://www.analog.com/media/en/technical-documentation/data-sheets/2909fb.pdf) · [Abracon ABM3 数据手册](https://abracon.com/Resonators/abm3.pdf)
 
-## USB Console
+## UART Console
 
-CH348L 的 VCC 取背板 SW_3V3，U8 从同一电源生成 1.8 V，供全部串口 I/O 使用。UART0–5 直接接 SLOT 0–5，每路 TX 接对端 RX。94 脚 TEST 接地，RESET 使用内部上拉。晶振为 8 MHz，七颗 100 nF 电容分别靠近各 VCC、VIO 引脚。V2.1 首件从金手指验证六槽收发，槽位复位连接见 [Reset and Power Header](design/management-header.md)。[沁恒 CH348 数据手册](https://atta.szlcsc.com/upload/public/pdf/source/20240313/A2EF5AA685A1AE72CD026213AA917E03.pdf)
-
-USB-C 的 CC1、CC2 分别通过 5.1 kΩ 接地。U10 保护 D+/D−，U11（TS3USB221ARSER）由背板 3.3 V 供电。R47、R48 各 10 kΩ，将 VBUS 二分之一送到 U11 的 S 输入。主机提供 VBUS 时，U11 选择接到 CH348L 的第二通道；拔线后选择留空的第一通道。仅插 USB 时，背板和串口桥保持断电。首件验证 USB 正反插枚举、带线开关背板电源，以及背板供电时拔线再枚举。[TI TS3USB221A 数据手册](https://www.ti.com/lit/ds/symlink/ts3usb221a.pdf) · [USB-IF 反向供电测试](https://www.usb.org/sites/default/files/USB-IFTestProc1_3.pdf)
+六个槽位的 UART 直接引到 J11，使用外接多路 TTL UART 模块。针位、信号方向和供电接法见 [Management Header](design/management-header.md)。
 
 ## DC Power
 
-采用外置稳压 12 V DC 电源，首版以额定 10 A（120 W）作为预算。满载预算暂取 8 A，其中六块板合计 7.2 A，风扇、交换芯片及其他背板电路合计 0.8 A。这是供电预算，定型前用原配转接板测单板启动峰值和持续满载电流，再复测六槽同时开机。
+默认不接 Zero，使用外置稳压 12 V / 10 A 适配器。该工况的满载预算暂取 8 A，其中六块核心板合计 7.2 A，风扇、交换芯片及其他背板电路合计 0.8 A。通过 J11 给 Zero 供电时，建议选用 12 V / 11 A 适配器。按 Zero 取 5 V / 2 A、U2 效率暂按 90% 估算，12 V 侧约增加 0.93 A，整机满载约 8.93 A。首件分别测量两种工况下六槽同时开机的峰值电流和持续满载电流。
 
 [Power](sch/Backplane/Power.esch2) 使用主保险、TVS 和并联 P 沟道 MOSFET 处理输入保护，由 TPS259824O 控制上电斜率和过电流关断。六个槽位各有独立保险，F8 经两针 J8 为 12 V 两线风扇供电。风扇直接插接时全速运行；需要手动调速时，可在 J8 与风扇之间串接适配两线无刷风扇的旋钮调压模块，最低档按所选风扇的冷启动电压设定。三级 TPS54302 分别生成 5 V、3.3 V 和 1.1 V。元件初值按 10 A 输入设计目标选取，主保险、各支路保险、输入斜率、稳压环路和温升按实测定型。 [TPS25982 数据手册](https://www.ti.com/lit/ds/symlink/tps25982.pdf) · [TPS54302 数据手册](https://www.ti.com/lit/ds/symlink/tps54302.pdf)
 
@@ -78,5 +75,9 @@ USB-C 的 CC1、CC2 分别通过 5.1 kΩ 接地。U10 保护 D+/D−，U11（TS3
 输入保护集中在 DC 口旁。降压器件布局和电容用途见 [Top-Side Power Placement](design/power/top-power-placement.md)。按持续 8 A 估算，主供电路径每增加 10 mΩ 串联电阻就会产生 0.64 W 损耗和 80 mV 压降。样机装到底座后，在六槽同时满载时测量插头触点、F1、Q1/Q2 和 U1 的压降与温升，同时记录顶面降压区、底面交换芯片及靠出风端核心板的温度。
 
 ## Fabrication
+
+当前四层试布使用顶面和底面走信号，内层 1 铺 GND，内层 2 铺 BUS_12V。两内层仍有早期走线，核算高速线阻抗时需沿路径检查参考铜面的连续性。PCB 当前叠层外铜约 35 µm；采用 2 oz 外铜时，按板厂确认的介质厚度、铜厚和蚀刻参数重新确定差分线宽与间距。
+
+六个槽位和 RJ45 上联共定义 28 对以太网差分网络，USB 开关两侧另有两对。RJ45 上联的 C 对已接通，两线铜长均约 79.741 mm。串口已接通槽位 3–5 的收发线及槽位 2 的 TX，复位已接通槽位 2–5。当前 PCB 重新打开后，DRC 剩余 387 项未连接。
 
 PCB 的四层预览包含器件摆放、临时封装和试布线。按实际型号确认封装和器件净空，调整 12 V 汇流及地回流，按选定叠层重布 USB 与千兆差分线。通过设计规则检查后，从对应修订导出 Gerber、贴片 BOM 和贴片坐标，并一起上传到对应的 GitHub Release。下单选择绿色阻焊。

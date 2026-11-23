@@ -25,7 +25,7 @@
 
 铜柱高度按散热片、RJ45、杜邦插头外壳和出线弯曲空间确定。托盘支撑高度同时满足底面器件净空和风道要求。
 
-管理线束接法见 [Management Header](../../design/management-header.md)，串口接法见 [USB Console](../../README.md#usb-console)。
+管理线束接法见 [Management Header](../../design/management-header.md)，串口接法见 [UART Console](../../README.md#uart-console)。
 
 ## Native EDA Preview
 

@@ -30,15 +30,15 @@ MCI 845 核心板使用 **SATA 外形的 22 触点连接器**，通过配套转�
 
 长段的 MDI0 至 MDI3 是四对千兆以太网差分线，+ 和 − 表示各对的正端和负端。GND 为地。V2.1 六槽背板的端口分配和直连接法见 [Panel and Ethernet](../README.md#panel-and-ethernet)。
 
-短段 VIN 按 12 V 输入设计。UART TX、RX 分别指核心板发送和接收。底板的串口和复位接法见 [USB Console](../README.md#usb-console) 和 [Reset and Power Header](../design/management-header.md)。
+短段 VIN 按 12 V 输入设计。UART TX、RX 分别指核心板发送和接收。底板的串口和复位接法见 [UART Console](../README.md#uart-console) 和 [Reset and Power Header](../design/management-header.md)。
 
-V2.1 核心板正常运行时，R05（RESET，母座焊盘 3）对地实测为 0 V。R05 直连 J11。1.8 V 高有效是待测假设，允许输入电压、触发极性与脉宽待验证。
+R05（RESET，母座焊盘 3）接地触发核心板复位。外部控制器用开漏输出拉低，释放时切回高阻。此前在运行中的 V2.1 板上记录过 0 V；首件用示波器复核空闲电平和有效复位脉宽。
 
 ### Reference Evidence
 
 本地照片位于 `references/mci-845/sata-interface/`。`05-k001-v2-3-contacts.jpg` 给出触点编号的观察方向，`01-coreboard-and-12v-adapter.jpg` 显示转接板的 `DC12V` 丝印，`02-h845d-adapter-top.jpg` 和 `06-feng-adapter-render-top.jpg` 可见长段到 RJ45 一侧的走线。
 
-长段线序、差分极性和接地触点依据此前记录的 15 针标注特写，特写中的网卡丝印为 RTL8153。照片 03 和 05 分别显示 `MCI_K001_V2_1` 和 `MCI_K001_V2_3`。首件按实际版本核对插合与导通、电源触点和输入电压范围、UART 方向和空闲电平，以及复位触发电平。
+长段线序、差分极性和接地触点依据此前记录的 15 针标注特写，特写中的网卡丝印为 RTL8153。照片 03 和 05 分别显示 `MCI_K001_V2_1` 和 `MCI_K001_V2_3`。首件按实际版本核对插合与导通、电源触点和输入电压范围、UART 方向和空闲电平，以及复位脉宽。
 
 器件资料见 [AX88179 数据手册](https://downloads.codico.com/misc/ROHS%202011%2065%20EU%20ab%201.1.2013/Asix/AX88179_Datasheet_v122.pdf) · [Amphenol 22 触点连接器图纸](https://www.amphenol-cs.com/product/sata00102253a.html)。
 
