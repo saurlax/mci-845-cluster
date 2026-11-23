@@ -1,6 +1,6 @@
 # Top-Side Power Placement
 
-三路降压电源放在 PCB 顶面前沿，12 V 储能电容 C1 放在接口区内侧。换面涉及 C1、F1、J11，以及 U2–U4、L1–L3、C7–C24、R5–R10，共 33 个器件。三路降压的芯片、电感、输入输出电容及反馈阻容一起换面。
+3.3 V 降压级位于右侧 Zero 安装区下方。U3 中心位于 (120, 25) mm，L2 位于 (120, 31) mm，C13–C18、R7 和 R8 随该级一起放置。12 V 储能电容 C1 位于 (106, 14) mm。5 V 的 U2/L1 和 1.1 V 的 U4/L3 位于顶面前沿，C23、C24 靠近 L3。当前布局已在 PCB 平面避让安装孔和接口，Zero 底面到电容、电感顶部的垂直净空取决于实际铜柱高度。
 
 ## Capacitor Functions
 
@@ -26,7 +26,7 @@
 - EDA 实际导出中，底面最低点由约 −10.17 mm 变为 −4.00 mm，包含连接器引脚。
 - 已清除 417 段受移位影响的旧走线；电源区需要重新布线、铺铜及 DRC。
 
-坐标和检查结果见 [Placement Data](top-power-placement.json) 与 [Mechanical Check](top-power-mechanical-check.json)。
+首次换面的坐标和检查结果见 [Placement Data](top-power-placement.json) 与 [Mechanical Check](top-power-mechanical-check.json)。当前坐标见 [Backplane PCB](../../pcb/Backplane.epcb2)。
 
 [Native EDA Assembly](../../enclosure/assembly/preview/mci-845-eda-assembly-140x65-7020.glb) · [Bottom View](../../enclosure/assembly/preview/eda-backplane-bottom.png)
 
