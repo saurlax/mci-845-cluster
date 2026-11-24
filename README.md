@@ -1,6 +1,6 @@
 # MCI 845 Cluster
 
-用六块 MCI 骁龙 845 核心板组成一个桌面集群。项目目前处于设计阶段，底板使用嘉立创 EDA 专业版 v4。
+用六块 MCI 骁龙 845 核心板组成一个桌面集群。四层底板已完成布线并通过嘉立创 EDA 专业版 v4 的设计规则检查，下一步是首件装配和上电验证。[布线与打样状态](hardware/README.md#fabrication)
 
 ## Repository Layout
 

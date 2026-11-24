@@ -5,6 +5,9 @@
 __pycache__/
 *.py[cod]
 debug.log
+/logs/
+/hardware/mci-845-cluster_backup/
+/hardware/backplane-bom.csv
 
 # Vendor CAD downloads
 /hardware/reference-models/delta-7020/delta-afc0712dd-tp10.step

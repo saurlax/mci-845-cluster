@@ -11,4 +11,4 @@
 | Slot 4 | J5 | 工作节点 |
 | Slot 5 | J6 | 工作节点 |
 
-底板的[网络拓扑](../hardware/README.md#panel-and-ethernet)、[供电分配](../hardware/README.md#dc-power)和 [J11 复位与供电排针](../hardware/design/management-header.md)见各自的设计说明。控制软件的集成计划见 [Cluster Controller](../software/controller/README.md)。
+底板的[网络拓扑](../hardware/README.md#panel-and-ethernet)、[供电分配](../hardware/README.md#dc-power)和 [J11 管理排针（UART、复位和辅助供电）](../hardware/design/management-header.md)见各自的设计说明。控制软件的集成计划见 [Cluster Controller](../software/controller/README.md)。
