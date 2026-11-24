@@ -3,7 +3,7 @@
     "valid": true,
     "solids": 1,
     "watertight": true,
-    "volume_mm3": 49130.49011758904,
+    "volume_mm3": 49130.49011758902,
     "print_size_mm": [
       172.0,
       77.0,
@@ -25,8 +25,8 @@
   "pcb_top_z": 0,
   "pcb_support_z": -1.6,
   "floor_top_z": -10,
-  "bottom_component_min_z": -4.0,
-  "bottom_component_floor_gap": 6.0,
+  "bottom_component_min_z": -4.270231246948242,
+  "bottom_component_floor_gap": 5.729768753051758,
   "fan_envelope_intersection_mm3": 0,
   "fan_panel_to_frame_gap": 2,
   "fan_side_wall_gap": 1,
@@ -36,8 +36,8 @@
       3.5
     ],
     [
-      5.5,
-      47
+      -3.5,
+      61.4501
     ],
     [
       129.4001,

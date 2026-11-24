@@ -10,7 +10,7 @@
 | --- | --- |
 | Fan frame envelope | X = −27–−7；Y = −2.5–67.5；Z = 0–70 |
 | Frame center, Y / Z | 32.5 / 35 |
-| Minimum distance to Slot 0 / 1 / 2 | 均为 2.115 mm，STEP 实体表面测距 |
+| Minimum distance to Slot 0 / 1 / 2 | 均为 7.865 mm，STEP 实体表面测距 |
 | Frame overhang beyond 65 mm PCB width | 两侧各 2.5 mm |
 | Frame top above 845 top | 约 5.15 mm |
 | Mounting-hole pitch | 61.5 × 61.5 mm |

@@ -18,7 +18,7 @@
 | Tray print envelope | 172 × 77 × 16 mm |
 | Fan panel print envelope | 86 × 76 × 3 mm |
 | PCB underside / support height | Z = −1.6 mm / 8.4 mm above floor |
-| Floor top / bottom components | Z = −10 / −4 mm；净空 6 mm |
+| Floor top / bottom components | Z = −10 / −4.27 mm，净空 5.73 mm |
 | Fan aperture | Ø68 mm |
 | Fan bolt pitch / clearance holes | 61.5 × 61.5 mm / Ø5.5 mm |
 | Panel-to-fan spacer | 2 mm |
@@ -53,4 +53,4 @@
 
 ## Verification
 
-两个打印件均为有效的单一实体，STL 网格封闭；面板与托盘装配实体交叠体积为 0。底部器件距托盘底面 6 mm，PCB 固定孔沿用当前 EDA 六孔坐标，风扇固定孔沿用[台达官方尺寸](https://www.delta-fan.com/Download/Spec/AFC0712DD-TP10.pdf)。检查结果见 [Geometry checks](checks/printed-base-check.json)。首件需验证打印收缩、塑料螺钉咬合及风扇紧固件工具空间；运行温度由实机负载测试确认。
+两个打印件均为有效的单一实体，STL 网格封闭；面板与托盘装配实体交叠体积为 0。底部器件距托盘底面 5.73 mm，PCB 固定孔沿用当前 EDA 六孔坐标，风扇固定孔沿用[台达官方尺寸](https://www.delta-fan.com/Download/Spec/AFC0712DD-TP10.pdf)。检查结果见 [Geometry checks](checks/printed-base-check.json)。首件需验证打印收缩、塑料螺钉咬合及风扇紧固件工具空间；运行温度由实机负载测试确认。
